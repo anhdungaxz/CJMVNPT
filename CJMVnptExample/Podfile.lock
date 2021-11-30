@@ -1,3 +1,25 @@
-PODFILE CHECKSUM: 30d818acc8a6ed12237b823699cf447ddd640dae
+PODS:
+  - CJMVNPT (1.0.3):
+    - SDWebImage (~> 5.1)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - CJMVNPT (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  CJMVNPT:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CJMVNPT: 7d2adc09b245b11fb3acfef320856ddac73847b7
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: f99e1249a24c36c41f5c52fa8b550090ba8ff57a
 
 COCOAPODS: 1.11.2

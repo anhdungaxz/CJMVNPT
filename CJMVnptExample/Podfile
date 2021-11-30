@@ -6,7 +6,7 @@ target 'CJMVnptExample' do
   use_frameworks!
 
   # Pods for CJMVnptExample
-
+  pod 'CJMVNPT', :path => "../"
 
   target 'CJMVnptExampleTests' do
     inherit! :search_paths

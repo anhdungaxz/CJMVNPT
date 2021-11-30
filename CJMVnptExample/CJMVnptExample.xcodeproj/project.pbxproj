@@ -200,6 +200,7 @@
 				178426542755C359006246D0 /* Frameworks */,
 				178426552755C359006246D0 /* Resources */,
 				1784268E2755C392006246D0 /* Embed Frameworks */,
+				D0265529E28DA7E444E9C9C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +238,7 @@
 				178426742755C35B006246D0 /* Sources */,
 				178426752755C35B006246D0 /* Frameworks */,
 				178426762755C35B006246D0 /* Resources */,
+				A0DA713FC79F6EE67F91AFBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +340,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DA713FC79F6EE67F91AFBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMVnptExample-CJMVnptExampleUITests/Pods-CJMVnptExample-CJMVnptExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMVnptExample-CJMVnptExampleUITests/Pods-CJMVnptExample-CJMVnptExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJMVnptExample-CJMVnptExampleUITests/Pods-CJMVnptExample-CJMVnptExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0265529E28DA7E444E9C9C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMVnptExample/Pods-CJMVnptExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMVnptExample/Pods-CJMVnptExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJMVnptExample/Pods-CJMVnptExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1A5B33421B5AA6220EE0B4A /* [CP] Check Pods Manifest.lock */ = {
