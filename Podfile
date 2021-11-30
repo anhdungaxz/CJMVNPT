@@ -7,4 +7,6 @@ target 'CJMVNPT' do
 
   # Pods for CJMVNPT
 
+pod 'CJMVNPT', :path => "../"
+
 end

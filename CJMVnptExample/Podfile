@@ -8,8 +8,6 @@ target 'CJMVnptExample' do
   # Pods for CJMVnptExample
 
 
-pod 'SDWebImage'
-
   target 'CJMVnptExampleTests' do
     inherit! :search_paths
     # Pods for testing

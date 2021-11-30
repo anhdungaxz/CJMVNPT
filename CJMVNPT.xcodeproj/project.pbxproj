@@ -306,6 +306,8 @@
 		178426412754BA9B006246D0 /* CJMInAppDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425F92754BA9B006246D0 /* CJMInAppDisplayViewController.m */; };
 		178426422754BA9B006246D0 /* CJMUTMDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425FA2754BA9B006246D0 /* CJMUTMDetail.h */; };
 		178426452754DC25006246D0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178426442754DC24006246D0 /* SDWebImage.framework */; };
+		1784269427560A0B006246D0 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1784269327560A0B006246D0 /* libicucore.tbd */; };
+		1784269627560A14006246D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1784269527560A14006246D0 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -609,6 +611,8 @@
 		178425F92754BA9B006246D0 /* CJMInAppDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppDisplayViewController.m; sourceTree = "<group>"; };
 		178425FA2754BA9B006246D0 /* CJMUTMDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMUTMDetail.h; sourceTree = "<group>"; };
 		178426442754DC24006246D0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Vendors/SDWebImage.framework; sourceTree = "<group>"; };
+		1784269327560A0B006246D0 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		1784269527560A14006246D0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -616,6 +620,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1784269627560A14006246D0 /* libsqlite3.tbd in Frameworks */,
+				1784269427560A0B006246D0 /* libicucore.tbd in Frameworks */,
 				178426452754DC25006246D0 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1172,6 +1178,8 @@
 		178426432754DC24006246D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1784269527560A14006246D0 /* libsqlite3.tbd */,
+				1784269327560A0B006246D0 /* libicucore.tbd */,
 				178426442754DC24006246D0 /* SDWebImage.framework */,
 			);
 			name = Frameworks;
