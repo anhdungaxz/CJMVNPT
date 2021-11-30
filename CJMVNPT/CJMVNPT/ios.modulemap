@@ -1,0 +1,19 @@
+framework module CJMVNPT {
+    header "CJM.h"
+    header "CJM+Inbox.h"
+    header "CJM+ABTesting.h"
+    header "CJM+FeatureFlags.h"
+    header "CJM+ProductConfig.h"
+    header "CJM+DisplayUnit.h"
+    header "CJM+SSLPinning.h"
+    header "CJMBuildInfo.h"
+    header "CJMEventDetail.h"
+    header "CJMInAppNotificationDelegate.h"
+    header "CJMPushNotificationDelegate.h"
+    header "CJMSyncDelegate.h"
+    header "CJMUTMDetail.h"
+    header "CJMTrackedViewController.h"
+    header "CJMInstanceConfig.h"
+    header "CJMJSInterface.h"
+    export *
+}

@@ -1,0 +1,1781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		178423DB275478F1006246D0 /* CJMNSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423D3275478F1006246D0 /* CJMNSString+Base64.h */; };
+		178423DC275478F1006246D0 /* CJMAESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423D4275478F1006246D0 /* CJMAESCrypt.h */; };
+		178423DD275478F1006246D0 /* CJMNSData+CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423D5275478F1006246D0 /* CJMNSData+CommonCrypto.h */; };
+		178423DE275478F1006246D0 /* CJMNSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423D6275478F1006246D0 /* CJMNSData+Base64.m */; };
+		178423DF275478F1006246D0 /* CJMNSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423D7275478F1006246D0 /* CJMNSString+Base64.m */; };
+		178423E0275478F1006246D0 /* CJMAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423D8275478F1006246D0 /* CJMAESCrypt.m */; };
+		178423E1275478F1006246D0 /* CJMNSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423D9275478F1006246D0 /* CJMNSData+Base64.h */; };
+		178423E2275478F1006246D0 /* CJMNSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423DA275478F1006246D0 /* CJMNSData+CommonCrypto.m */; };
+		178423E5275478FA006246D0 /* CJMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423E3275478FA006246D0 /* CJMManager.h */; };
+		178423E6275478FA006246D0 /* CJMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423E4275478FA006246D0 /* CJMManager.m */; };
+		178423EF2754790B006246D0 /* CJMProductConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423E92754790B006246D0 /* CJMProductConfig.m */; };
+		178423F02754790B006246D0 /* CJMConfigValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423EA2754790B006246D0 /* CJMConfigValue.m */; };
+		178423F12754790B006246D0 /* CJMProductConfigPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423EB2754790B006246D0 /* CJMProductConfigPrivate.h */; };
+		178423F22754790B006246D0 /* CJMProductConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423ED2754790B006246D0 /* CJMProductConfigController.m */; };
+		178423F32754790B006246D0 /* CJMProductConfigController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423EE2754790B006246D0 /* CJMProductConfigController.h */; };
+		178423FB27547A19006246D0 /* CJMFeatureFlagsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423F627547A19006246D0 /* CJMFeatureFlagsPrivate.h */; };
+		178423FC27547A19006246D0 /* CJMFeatureFlags.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423F727547A19006246D0 /* CJMFeatureFlags.m */; };
+		178423FD27547A19006246D0 /* CJMFeatureFlagsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178423F927547A19006246D0 /* CJMFeatureFlagsController.m */; };
+		178423FE27547A19006246D0 /* CJMFeatureFlagsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178423FA27547A19006246D0 /* CJMFeatureFlagsController.h */; };
+		1784240627548138006246D0 /* CJMDisplayUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784240127548138006246D0 /* CJMDisplayUnit.m */; };
+		1784240727548138006246D0 /* CJMDisplayUnitContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784240227548138006246D0 /* CJMDisplayUnitContent.m */; };
+		1784240827548138006246D0 /* CJMDisplayUnitController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784240427548138006246D0 /* CJMDisplayUnitController.h */; };
+		1784240927548138006246D0 /* CJMDisplayUnitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784240527548138006246D0 /* CJMDisplayUnitController.m */; };
+		1784245C275482BE006246D0 /* CJMWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784240D275482BD006246D0 /* CJMWebSocket.h */; };
+		1784245D275482BE006246D0 /* CJMWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784240E275482BD006246D0 /* CJMWebSocket.m */; };
+		1784245E275482BE006246D0 /* CJMABTestEditorSnapshotMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842410275482BD006246D0 /* CJMABTestEditorSnapshotMessageResponse.h */; };
+		1784245F275482BE006246D0 /* CJMABTestEditorHandshakeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842411275482BD006246D0 /* CJMABTestEditorHandshakeMessage.h */; };
+		17842460275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842412275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.m */; };
+		17842461275482BE006246D0 /* CJMABTestEditorVarsMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842413275482BD006246D0 /* CJMABTestEditorVarsMessageResponse.m */; };
+		17842462275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842414275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.h */; };
+		17842463275482BE006246D0 /* CJMABTestEditorVarsMessageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842415275482BD006246D0 /* CJMABTestEditorVarsMessageRequest.h */; };
+		17842464275482BE006246D0 /* CJMABTestEditorSnapshotMessageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842416275482BD006246D0 /* CJMABTestEditorSnapshotMessageRequest.h */; };
+		17842465275482BE006246D0 /* CJMABTestEditorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842417275482BD006246D0 /* CJMABTestEditorMessage.m */; };
+		17842466275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842418275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.h */; };
+		17842467275482BE006246D0 /* CJMABTestEditorHandshakeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842419275482BD006246D0 /* CJMABTestEditorHandshakeMessage.m */; };
+		17842468275482BE006246D0 /* CJMABTestEditorSnapshotMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784241A275482BD006246D0 /* CJMABTestEditorSnapshotMessageResponse.m */; };
+		17842469275482BE006246D0 /* CJMABTestEditorVarsMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784241B275482BD006246D0 /* CJMABTestEditorVarsMessageResponse.h */; };
+		1784246A275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784241C275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.m */; };
+		1784246B275482BE006246D0 /* CJMABTestEditorVarsMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784241D275482BD006246D0 /* CJMABTestEditorVarsMessageRequest.m */; };
+		1784246C275482BE006246D0 /* CJMABTestEditorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784241E275482BD006246D0 /* CJMABTestEditorMessage.h */; };
+		1784246D275482BE006246D0 /* CJMABTestEditorSnapshotMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784241F275482BD006246D0 /* CJMABTestEditorSnapshotMessageRequest.m */; };
+		1784246E275482BE006246D0 /* CJMSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842420275482BD006246D0 /* CJMSwizzler.h */; };
+		1784246F275482BE006246D0 /* CJMEditorSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842421275482BD006246D0 /* CJMEditorSession.h */; };
+		17842470275482BE006246D0 /* NSInvocation+CJMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842422275482BD006246D0 /* NSInvocation+CJMHelper.m */; };
+		17842471275482BE006246D0 /* CJMEditorImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842423275482BD006246D0 /* CJMEditorImageCache.h */; };
+		17842472275482BE006246D0 /* CJMObjectSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842425275482BE006246D0 /* CJMObjectSelector.m */; };
+		17842473275482BE006246D0 /* CJMClassDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842426275482BE006246D0 /* CJMClassDescription.h */; };
+		17842474275482BE006246D0 /* CJMObjectSequenceGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842427275482BE006246D0 /* CJMObjectSequenceGenerator.m */; };
+		17842475275482BE006246D0 /* CJMObjectIdentityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842428275482BE006246D0 /* CJMObjectIdentityProvider.h */; };
+		17842476275482BE006246D0 /* CJMEnumDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842429275482BE006246D0 /* CJMEnumDescription.h */; };
+		17842477275482BE006246D0 /* CJMPropertyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784242A275482BE006246D0 /* CJMPropertyDescription.h */; };
+		17842478275482BE006246D0 /* CJMApplicationStateSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784242B275482BE006246D0 /* CJMApplicationStateSerializer.h */; };
+		17842479275482BE006246D0 /* CJMObjectSerializerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784242C275482BE006246D0 /* CJMObjectSerializerContext.m */; };
+		1784247A275482BE006246D0 /* CJMObjectSerializerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784242D275482BE006246D0 /* CJMObjectSerializerConfig.h */; };
+		1784247B275482BE006246D0 /* CJMObjectSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784242E275482BE006246D0 /* CJMObjectSerializer.h */; };
+		1784247C275482BE006246D0 /* CJMTypeDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784242F275482BE006246D0 /* CJMTypeDescription.h */; };
+		1784247D275482BE006246D0 /* CJMObjectIdentityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842430275482BE006246D0 /* CJMObjectIdentityProvider.m */; };
+		1784247E275482BE006246D0 /* CJMObjectSequenceGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842431275482BE006246D0 /* CJMObjectSequenceGenerator.h */; };
+		1784247F275482BE006246D0 /* CJMObjectSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842432275482BE006246D0 /* CJMObjectSelector.h */; };
+		17842480275482BE006246D0 /* CJMClassDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842433275482BE006246D0 /* CJMClassDescription.m */; };
+		17842481275482BE006246D0 /* CJMPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842434275482BE006246D0 /* CJMPropertyDescription.m */; };
+		17842482275482BE006246D0 /* CJMEnumDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842435275482BE006246D0 /* CJMEnumDescription.m */; };
+		17842483275482BE006246D0 /* CJMObjectSerializerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842436275482BE006246D0 /* CJMObjectSerializerConfig.m */; };
+		17842484275482BE006246D0 /* CJMObjectSerializerContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842437275482BE006246D0 /* CJMObjectSerializerContext.h */; };
+		17842485275482BE006246D0 /* CJMApplicationStateSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842438275482BE006246D0 /* CJMApplicationStateSerializer.m */; };
+		17842486275482BE006246D0 /* CJMTypeDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842439275482BE006246D0 /* CJMTypeDescription.m */; };
+		17842487275482BE006246D0 /* CJMObjectSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784243A275482BE006246D0 /* CJMObjectSerializer.m */; };
+		17842488275482BE006246D0 /* CJMNSDictionaryFromUIFontValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784243C275482BE006246D0 /* CJMNSDictionaryFromUIFontValueTransformer.m */; };
+		17842489275482BE006246D0 /* CJMNSStringFromUIColorValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784243D275482BE006246D0 /* CJMNSStringFromUIColorValueTransformer.m */; };
+		1784248A275482BE006246D0 /* CJMValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784243E275482BE006246D0 /* CJMValueTransformers.h */; };
+		1784248B275482BE006246D0 /* CJMNSDictionaryFromUIImageValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784243F275482BE006246D0 /* CJMNSDictionaryFromUIImageValueTransformer.m */; };
+		1784248C275482BE006246D0 /* CJMNSDictionaryFromCGSizeValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842440275482BE006246D0 /* CJMNSDictionaryFromCGSizeValueTransformer.m */; };
+		1784248D275482BE006246D0 /* CJMPassThroughValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842441275482BE006246D0 /* CJMPassThroughValueTransformer.m */; };
+		1784248E275482BE006246D0 /* CJMNSDictionaryFromNSAttributedStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842442275482BE006246D0 /* CJMNSDictionaryFromNSAttributedStringValueTransformer.m */; };
+		1784248F275482BE006246D0 /* CJMNSStringFromCGColorRefValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842443275482BE006246D0 /* CJMNSStringFromCGColorRefValueTransformer.m */; };
+		17842490275482BE006246D0 /* CJMCGFloatFromNSNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842444275482BE006246D0 /* CJMCGFloatFromNSNumberValueTransformer.m */; };
+		17842491275482BE006246D0 /* CJMNSDictionaryFromCATransform3DValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842445275482BE006246D0 /* CJMNSDictionaryFromCATransform3DValueTransformer.m */; };
+		17842492275482BE006246D0 /* CJMSDictionaryFromCGAffineTransformValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842446275482BE006246D0 /* CJMSDictionaryFromCGAffineTransformValueTransformer.m */; };
+		17842493275482BE006246D0 /* CJMNSDictionaryFromUIEdgeInsetsValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842447275482BE006246D0 /* CJMNSDictionaryFromUIEdgeInsetsValueTransformer.m */; };
+		17842494275482BE006246D0 /* CJMNSNumberFromBOOLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842448275482BE006246D0 /* CJMNSNumberFromBOOLValueTransformer.m */; };
+		17842495275482BE006246D0 /* CJMNSDictionaryFromCGRectValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842449275482BE006246D0 /* CJMNSDictionaryFromCGRectValueTransformer.m */; };
+		17842496275482BE006246D0 /* CJMNSDictionaryFromCGPointValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784244A275482BE006246D0 /* CJMNSDictionaryFromCGPointValueTransformer.m */; };
+		17842497275482BE006246D0 /* CJMEditorSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784244B275482BE006246D0 /* CJMEditorSession.m */; };
+		17842498275482BE006246D0 /* CJMSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784244C275482BE006246D0 /* CJMSwizzler.m */; };
+		17842499275482BE006246D0 /* NSInvocation+CJMHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784244D275482BE006246D0 /* NSInvocation+CJMHelper.h */; };
+		1784249A275482BE006246D0 /* CJMEditorImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784244E275482BE006246D0 /* CJMEditorImageCache.m */; };
+		1784249B275482BE006246D0 /* CJMABTestUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842450275482BE006246D0 /* CJMABTestUtils.h */; };
+		1784249C275482BE006246D0 /* CJMABTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842451275482BE006246D0 /* CJMABTestUtils.m */; };
+		1784249D275482BE006246D0 /* CJMABVariant.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842453275482BE006246D0 /* CJMABVariant.h */; };
+		1784249E275482BE006246D0 /* CJMVar.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842454275482BE006246D0 /* CJMVar.h */; };
+		1784249F275482BE006246D0 /* CJMVarCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 17842455275482BE006246D0 /* CJMVarCache.h */; };
+		178424A0275482BE006246D0 /* CJMVar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842456275482BE006246D0 /* CJMVar.m */; };
+		178424A1275482BE006246D0 /* CJMABVariant.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842457275482BE006246D0 /* CJMABVariant.m */; };
+		178424A2275482BE006246D0 /* CJMVarCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 17842458275482BE006246D0 /* CJMVarCache.m */; };
+		178424A3275482BE006246D0 /* CJMABTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784245A275482BE006246D0 /* CJMABTestController.h */; };
+		178424A4275482BE006246D0 /* CJMABTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784245B275482BE006246D0 /* CJMABTestController.m */; };
+		178424E327549068006246D0 /* CJMInboxSimpleMessageCell~land.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424A727549067006246D0 /* CJMInboxSimpleMessageCell~land.xib */; };
+		178424E427549068006246D0 /* CJMCarouselMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424A827549067006246D0 /* CJMCarouselMessageCell.m */; };
+		178424E527549068006246D0 /* CJMInboxIconMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424A927549067006246D0 /* CJMInboxIconMessageCell.h */; };
+		178424E627549068006246D0 /* CJMInboxSimpleMessageCell~port.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424AA27549067006246D0 /* CJMInboxSimpleMessageCell~port.xib */; };
+		178424E727549068006246D0 /* CJMInboxIconMessageCell~land.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424AB27549068006246D0 /* CJMInboxIconMessageCell~land.xib */; };
+		178424E827549068006246D0 /* CJMCarouselImageMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424AC27549068006246D0 /* CJMCarouselImageMessageCell.h */; };
+		178424E927549068006246D0 /* CJMInboxIconMessageCell~port.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424AD27549068006246D0 /* CJMInboxIconMessageCell~port.xib */; };
+		178424EA27549068006246D0 /* CJMInboxSimpleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424AE27549068006246D0 /* CJMInboxSimpleMessageCell.m */; };
+		178424EB27549068006246D0 /* CJMInboxBaseMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424AF27549068006246D0 /* CJMInboxBaseMessageCell.m */; };
+		178424EC27549068006246D0 /* CJMInboxIconMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424B027549068006246D0 /* CJMInboxIconMessageCell.m */; };
+		178424ED27549068006246D0 /* CJMCarouselMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424B127549068006246D0 /* CJMCarouselMessageCell.h */; };
+		178424EE27549068006246D0 /* CJMCarouselImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424B227549068006246D0 /* CJMCarouselImageMessageCell.m */; };
+		178424EF27549068006246D0 /* CJMCarouselImageMessageCell~land.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424B327549068006246D0 /* CJMCarouselImageMessageCell~land.xib */; };
+		178424F027549068006246D0 /* CJMInboxSimpleMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424B427549068006246D0 /* CJMInboxSimpleMessageCell.h */; };
+		178424F127549068006246D0 /* CJMCarouselImageMessageCell~port.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424B527549068006246D0 /* CJMCarouselImageMessageCell~port.xib */; };
+		178424F227549068006246D0 /* CJMInboxBaseMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424B627549068006246D0 /* CJMInboxBaseMessageCell.h */; };
+		178424F327549068006246D0 /* CJMCarouselMessageCell~land.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424B727549068006246D0 /* CJMCarouselMessageCell~land.xib */; };
+		178424F427549068006246D0 /* CJMCarouselMessageCell~port.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424B827549068006246D0 /* CJMCarouselMessageCell~port.xib */; };
+		178424F527549068006246D0 /* CJMInboxStyleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424BA27549068006246D0 /* CJMInboxStyleConfig.m */; };
+		178424F627549068006246D0 /* CJMVideoThumbnailGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424BC27549068006246D0 /* CJMVideoThumbnailGenerator.m */; };
+		178424F727549068006246D0 /* volume_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 178424BD27549068006246D0 /* volume_off.png */; };
+		178424F827549068006246D0 /* volume_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 178424BE27549068006246D0 /* volume_on.png */; };
+		178424F927549068006246D0 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 178424BF27549068006246D0 /* placeholder.png */; };
+		178424FA27549068006246D0 /* CJMVideoThumbnailGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424C027549068006246D0 /* CJMVideoThumbnailGenerator.h */; };
+		178424FB27549068006246D0 /* ct_default_portrait_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 178424C127549068006246D0 /* ct_default_portrait_image.png */; };
+		178424FC27549068006246D0 /* ct_default_landscape_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 178424C227549068006246D0 /* ct_default_landscape_image.png */; };
+		178424FD27549068006246D0 /* ct_default_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 178424C327549068006246D0 /* ct_default_video.png */; };
+		178424FE27549068006246D0 /* CJMInboxUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424C527549068006246D0 /* CJMInboxUtils.h */; };
+		178424FF27549068006246D0 /* CJMUserMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424C627549068006246D0 /* CJMUserMO+CoreDataProperties.m */; };
+		1784250027549068006246D0 /* CJMMessageMO+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424C727549068006246D0 /* CJMMessageMO+CoreDataProperties.h */; };
+		1784250127549068006246D0 /* CJMMessageMO.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424C827549068006246D0 /* CJMMessageMO.h */; };
+		1784250227549068006246D0 /* CJMUserMO.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424C927549068006246D0 /* CJMUserMO.h */; };
+		1784250327549068006246D0 /* CJMInboxMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424CA27549068006246D0 /* CJMInboxMessageContent.m */; };
+		1784250427549068006246D0 /* CJMMessageMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424CB27549068006246D0 /* CJMMessageMO+CoreDataProperties.m */; };
+		1784250527549068006246D0 /* CJMUserMO+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424CC27549068006246D0 /* CJMUserMO+CoreDataProperties.h */; };
+		1784250627549068006246D0 /* CJMInboxUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424CD27549068006246D0 /* CJMInboxUtils.m */; };
+		1784250727549068006246D0 /* CJMInboxMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424CE27549068006246D0 /* CJMInboxMessage.m */; };
+		1784250827549068006246D0 /* CJMMessageMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424CF27549068006246D0 /* CJMMessageMO.m */; };
+		1784250927549068006246D0 /* Inbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 178424D027549068006246D0 /* Inbox.xcdatamodeld */; };
+		1784250A27549068006246D0 /* CJMUserMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424D227549068006246D0 /* CJMUserMO.m */; };
+		1784250B27549068006246D0 /* CJMInboxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424D427549068006246D0 /* CJMInboxController.m */; };
+		1784250C27549068006246D0 /* CJMInboxViewControllerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424D527549068006246D0 /* CJMInboxViewControllerPrivate.h */; };
+		1784250D27549068006246D0 /* CJMInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424D627549068006246D0 /* CJMInboxViewController.m */; };
+		1784250E27549068006246D0 /* CJMInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424D727549068006246D0 /* CJMInboxViewController.xib */; };
+		1784250F27549068006246D0 /* CJMInboxController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424D827549068006246D0 /* CJMInboxController.h */; };
+		1784251027549068006246D0 /* CJMInboxMessageActionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424DA27549068006246D0 /* CJMInboxMessageActionView.h */; };
+		1784251127549068006246D0 /* UIView+CJMToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424DB27549068006246D0 /* UIView+CJMToast.m */; };
+		1784251227549068006246D0 /* CJMCarouselImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424DC27549068006246D0 /* CJMCarouselImageView.m */; };
+		1784251327549068006246D0 /* CJMCarouselImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178424DD27549068006246D0 /* CJMCarouselImageView.xib */; };
+		1784251427549068006246D0 /* CJMSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424DE27549068006246D0 /* CJMSwipeView.m */; };
+		1784251527549068006246D0 /* CJMCarouselImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424DF27549068006246D0 /* CJMCarouselImageView.h */; };
+		1784251627549068006246D0 /* UIView+CJMToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424E027549068006246D0 /* UIView+CJMToast.h */; };
+		1784251727549068006246D0 /* CJMInboxMessageActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 178424E127549068006246D0 /* CJMInboxMessageActionView.m */; };
+		1784251827549068006246D0 /* CJMSwipeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 178424E227549068006246D0 /* CJMSwipeView.h */; };
+		178425672754B5B7006246D0 /* CJMFooterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784251A2754B5B6006246D0 /* CJMFooterViewController.h */; };
+		178425682754B5B7006246D0 /* CJMHalfInterstitialViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784251B2754B5B6006246D0 /* CJMHalfInterstitialViewController~iphoneland.xib */; };
+		178425692754B5B7006246D0 /* CJMDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784251C2754B5B6006246D0 /* CJMDismissButton.m */; };
+		1784256A2754B5B7006246D0 /* CJMHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784251D2754B5B6006246D0 /* CJMHeaderViewController.m */; };
+		1784256B2754B5B7006246D0 /* CJMHalfInterstitialViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784251E2754B5B6006246D0 /* CJMHalfInterstitialViewController~ipad.xib */; };
+		1784256C2754B5B7006246D0 /* CJMHalfInterstitialViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784251F2754B5B6006246D0 /* CJMHalfInterstitialViewController~iphoneport.xib */; };
+		1784256D2754B5B7006246D0 /* CJMHalfInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425202754B5B6006246D0 /* CJMHalfInterstitialViewController.m */; };
+		1784256E2754B5B7006246D0 /* CJMBaseHeaderFooterViewControllerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425212754B5B6006246D0 /* CJMBaseHeaderFooterViewControllerPrivate.h */; };
+		1784256F2754B5B7006246D0 /* CJMInterstitialViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425222754B5B6006246D0 /* CJMInterstitialViewController~ipad.xib */; };
+		178425702754B5B7006246D0 /* CJMInterstitialImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425232754B5B6006246D0 /* CJMInterstitialImageViewController.m */; };
+		178425712754B5B7006246D0 /* CJMAVPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425242754B5B6006246D0 /* CJMAVPlayerViewController.h */; };
+		178425722754B5B7006246D0 /* CJMHeaderViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425252754B5B6006246D0 /* CJMHeaderViewController~ipadland.xib */; };
+		178425732754B5B7006246D0 /* CJMBaseHeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425262754B5B6006246D0 /* CJMBaseHeaderFooterViewController.m */; };
+		178425742754B5B7006246D0 /* CJMCoverImageViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425272754B5B6006246D0 /* CJMCoverImageViewController~iphoneport.xib */; };
+		178425752754B5B7006246D0 /* CJMHalfInterstitialViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425282754B5B6006246D0 /* CJMHalfInterstitialViewController~ipadland.xib */; };
+		178425762754B5B7006246D0 /* CJMCoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425292754B5B6006246D0 /* CJMCoverViewController.h */; };
+		178425772754B5B7006246D0 /* CJMCoverImageViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784252A2754B5B6006246D0 /* CJMCoverImageViewController~ipadland.xib */; };
+		178425782754B5B7006246D0 /* CJMHalfInterstitialImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784252B2754B5B6006246D0 /* CJMHalfInterstitialImageViewController.m */; };
+		178425792754B5B7006246D0 /* CJMImageInAppViewControllerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784252C2754B5B6006246D0 /* CJMImageInAppViewControllerPrivate.h */; };
+		1784257A2754B5B7006246D0 /* CJMCoverImageViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784252D2754B5B6006246D0 /* CJMCoverImageViewController~iphoneland.xib */; };
+		1784257B2754B5B7006246D0 /* ic_shrink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1784252F2754B5B6006246D0 /* ic_shrink@2x.png */; };
+		1784257C2754B5B7006246D0 /* ic_play@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425302754B5B6006246D0 /* ic_play@1x.png */; };
+		1784257D2754B5B7006246D0 /* ic_shrink@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425312754B5B6006246D0 /* ic_shrink@3x.png */; };
+		1784257E2754B5B7006246D0 /* ic_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425322754B5B6006246D0 /* ic_thumb.png */; };
+		1784257F2754B5B7006246D0 /* sound-wave-headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425332754B5B6006246D0 /* sound-wave-headphones.png */; };
+		178425802754B5B7006246D0 /* ic_expand@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425342754B5B6006246D0 /* ic_expand@3x.png */; };
+		178425812754B5B7006246D0 /* ic_expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425352754B5B6006246D0 /* ic_expand@2x.png */; };
+		178425822754B5B7006246D0 /* ic_pause@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425362754B5B6006246D0 /* ic_pause@1x.png */; };
+		178425832754B5B7006246D0 /* ic_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425372754B5B6006246D0 /* ic_pause@2x.png */; };
+		178425842754B5B7006246D0 /* ic_expand@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425382754B5B6006246D0 /* ic_expand@1x.png */; };
+		178425852754B5B7006246D0 /* ic_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178425392754B5B6006246D0 /* ic_pause@3x.png */; };
+		178425862754B5B7006246D0 /* ic_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1784253A2754B5B6006246D0 /* ic_play@3x.png */; };
+		178425872754B5B7006246D0 /* ic_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1784253B2754B5B6006246D0 /* ic_play@2x.png */; };
+		178425882754B5B7006246D0 /* ic_shrink@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1784253C2754B5B6006246D0 /* ic_shrink@1x.png */; };
+		178425892754B5B7006246D0 /* CJMFooterViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784253D2754B5B6006246D0 /* CJMFooterViewController~ipad.xib */; };
+		1784258A2754B5B7006246D0 /* CJMInterstitialImageViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784253E2754B5B6006246D0 /* CJMInterstitialImageViewController~iphoneland.xib */; };
+		1784258B2754B5B7006246D0 /* CJMCoverImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784253F2754B5B6006246D0 /* CJMCoverImageViewController.m */; };
+		1784258C2754B5B7006246D0 /* CJMInterstitialImageViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425402754B5B6006246D0 /* CJMInterstitialImageViewController~iphoneport.xib */; };
+		1784258D2754B5B7006246D0 /* CJMInterstitialImageViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425412754B5B6006246D0 /* CJMInterstitialImageViewController~ipadland.xib */; };
+		1784258E2754B5B7006246D0 /* CJMAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425422754B5B6006246D0 /* CJMAlertViewController.h */; };
+		1784258F2754B5B7006246D0 /* CJMInterstitialViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425432754B5B6006246D0 /* CJMInterstitialViewController~ipadland.xib */; };
+		178425902754B5B7006246D0 /* CJMImageInAppViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425442754B5B6006246D0 /* CJMImageInAppViewController.h */; };
+		178425912754B5B7006246D0 /* CJMInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425452754B5B6006246D0 /* CJMInterstitialViewController.m */; };
+		178425922754B5B7006246D0 /* CJMCoverViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425462754B5B6006246D0 /* CJMCoverViewController~iphoneport.xib */; };
+		178425932754B5B7006246D0 /* CJMHeaderViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425472754B5B6006246D0 /* CJMHeaderViewController~iphoneland.xib */; };
+		178425942754B5B7006246D0 /* CJMCoverViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425482754B5B6006246D0 /* CJMCoverViewController~ipad.xib */; };
+		178425952754B5B7006246D0 /* CJMInAppHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425492754B5B6006246D0 /* CJMInAppHTMLViewController.m */; };
+		178425962754B5B7006246D0 /* CJMHeaderViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784254A2754B5B6006246D0 /* CJMHeaderViewController~iphoneport.xib */; };
+		178425972754B5B7006246D0 /* CJMCoverViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784254B2754B5B6006246D0 /* CJMCoverViewController~iphoneland.xib */; };
+		178425982754B5B7006246D0 /* CJMInterstitialImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784254C2754B5B6006246D0 /* CJMInterstitialImageViewController.h */; };
+		178425992754B5B7006246D0 /* CJMAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784254D2754B5B6006246D0 /* CJMAVPlayerViewController.m */; };
+		1784259A2754B5B7006246D0 /* CJMHalfInterstitialViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784254E2754B5B6006246D0 /* CJMHalfInterstitialViewController.h */; };
+		1784259B2754B5B7006246D0 /* CJMDismissButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784254F2754B5B6006246D0 /* CJMDismissButton.h */; };
+		1784259C2754B5B7006246D0 /* CJMHeaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425502754B5B6006246D0 /* CJMHeaderViewController.h */; };
+		1784259D2754B5B7006246D0 /* CJMHeaderViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425512754B5B6006246D0 /* CJMHeaderViewController~ipad.xib */; };
+		1784259E2754B5B7006246D0 /* CJMFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425522754B5B6006246D0 /* CJMFooterViewController.m */; };
+		1784259F2754B5B7006246D0 /* CJMHalfInterstitialImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425532754B5B6006246D0 /* CJMHalfInterstitialImageViewController.h */; };
+		178425A02754B5B7006246D0 /* CJMInterstitialViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425542754B5B6006246D0 /* CJMInterstitialViewController~iphoneport.xib */; };
+		178425A12754B5B7006246D0 /* CJMFooterViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425552754B5B6006246D0 /* CJMFooterViewController~iphoneland.xib */; };
+		178425A22754B5B7006246D0 /* CJMCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425562754B5B6006246D0 /* CJMCoverViewController.m */; };
+		178425A32754B5B7006246D0 /* CJMFooterViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425572754B5B6006246D0 /* CJMFooterViewController~iphoneport.xib */; };
+		178425A42754B5B7006246D0 /* CJMInterstitialViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425582754B5B6006246D0 /* CJMInterstitialViewController~iphoneland.xib */; };
+		178425A52754B5B7006246D0 /* CJMBaseHeaderFooterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425592754B5B6006246D0 /* CJMBaseHeaderFooterViewController.h */; };
+		178425A62754B5B7006246D0 /* CJMAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784255A2754B5B6006246D0 /* CJMAlertViewController.m */; };
+		178425A72754B5B7006246D0 /* CJMImageInAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1784255B2754B5B6006246D0 /* CJMImageInAppViewController.m */; };
+		178425A82754B5B7006246D0 /* CJMHalfInterstitialImageViewController~iphoneland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784255C2754B5B6006246D0 /* CJMHalfInterstitialImageViewController~iphoneland.xib */; };
+		178425A92754B5B7006246D0 /* CJMHalfInterstitialImageViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784255D2754B5B6006246D0 /* CJMHalfInterstitialImageViewController~ipad.xib */; };
+		178425AA2754B5B7006246D0 /* CJMCoverImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784255E2754B5B6006246D0 /* CJMCoverImageViewController.h */; };
+		178425AB2754B5B7006246D0 /* CJMInterstitialImageViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1784255F2754B5B6006246D0 /* CJMInterstitialImageViewController~ipad.xib */; };
+		178425AC2754B5B7006246D0 /* CJMHalfInterstitialImageViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425602754B5B6006246D0 /* CJMHalfInterstitialImageViewController~ipadland.xib */; };
+		178425AD2754B5B7006246D0 /* CJMHalfInterstitialImageViewController~iphoneport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425612754B5B6006246D0 /* CJMHalfInterstitialImageViewController~iphoneport.xib */; };
+		178425AE2754B5B7006246D0 /* CJMCoverViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425622754B5B6006246D0 /* CJMCoverViewController~ipadland.xib */; };
+		178425AF2754B5B7006246D0 /* CJMInAppHTMLViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425632754B5B6006246D0 /* CJMInAppHTMLViewController.h */; };
+		178425B02754B5B7006246D0 /* CJMCoverImageViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425642754B5B6006246D0 /* CJMCoverImageViewController~ipad.xib */; };
+		178425B12754B5B7006246D0 /* CJMFooterViewController~ipadland.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178425652754B5B6006246D0 /* CJMFooterViewController~ipadland.xib */; };
+		178425B22754B5B7006246D0 /* CJMInterstitialViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425662754B5B6006246D0 /* CJMInterstitialViewController.h */; };
+		178425FB2754BA9B006246D0 /* CJMLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425B32754BA97006246D0 /* CJMLocationManager.h */; };
+		178425FC2754BA9B006246D0 /* CJMKnownProfileFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425B42754BA97006246D0 /* CJMKnownProfileFields.m */; };
+		178425FD2754BA9B006246D0 /* CJMLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425B52754BA97006246D0 /* CJMLogger.h */; };
+		178425FE2754BA9B006246D0 /* CJMValidationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425B62754BA97006246D0 /* CJMValidationResult.h */; };
+		178425FF2754BA9B006246D0 /* CJMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425B72754BA97006246D0 /* CJMLocationManager.m */; };
+		178426002754BA9B006246D0 /* CJMJSInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425B82754BA97006246D0 /* CJMJSInterface.m */; };
+		178426012754BA9B006246D0 /* CJMCertificatePinning.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425B92754BA97006246D0 /* CJMCertificatePinning.m */; };
+		178426022754BA9B006246D0 /* CJMUriHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425BA2754BA97006246D0 /* CJMUriHelper.m */; };
+		178426032754BA9B006246D0 /* CJMEventBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425BB2754BA97006246D0 /* CJMEventBuilder.m */; };
+		178426042754BA9B006246D0 /* CJM+ABTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425BC2754BA97006246D0 /* CJM+ABTesting.h */; };
+		178426052754BA9B006246D0 /* CJMNotificationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425BD2754BA97006246D0 /* CJMNotificationButton.m */; };
+		178426062754BA9B006246D0 /* CJM+ProductConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425BE2754BA97006246D0 /* CJM+ProductConfig.h */; };
+		178426072754BA9B006246D0 /* CJMPinnedNSURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425BF2754BA97006246D0 /* CJMPinnedNSURLSessionDelegate.h */; };
+		178426082754BA9B006246D0 /* CJMInstanceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425C02754BA97006246D0 /* CJMInstanceConfig.h */; };
+		178426092754BA9B006246D0 /* CJM+DisplayUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425C12754BA98006246D0 /* CJM+DisplayUnit.h */; };
+		1784260A2754BA9B006246D0 /* CJMPinnedNSURLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425C22754BA98006246D0 /* CJMPinnedNSURLSessionDelegate.m */; };
+		1784260B2754BA9B006246D0 /* CJM+FeatureFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425C32754BA98006246D0 /* CJM+FeatureFlags.h */; };
+		1784260C2754BA9B006246D0 /* CJMPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425C42754BA98006246D0 /* CJMPreferences.h */; };
+		1784260D2754BA9B006246D0 /* CJMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425C52754BA98006246D0 /* CJMLogger.m */; };
+		1784260E2754BA9B006246D0 /* CJMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425C62754BA98006246D0 /* CJMPreferences.m */; };
+		1784260F2754BA9B006246D0 /* CJMInAppNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425C72754BA98006246D0 /* CJMInAppNotification.h */; };
+		178426102754BA9B006246D0 /* CJMProfileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425C82754BA98006246D0 /* CJMProfileBuilder.m */; };
+		178426112754BA9B006246D0 /* CJMUriHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425C92754BA98006246D0 /* CJMUriHelper.h */; };
+		178426122754BA9B006246D0 /* CJMLocalDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425CA2754BA98006246D0 /* CJMLocalDataStore.m */; };
+		178426132754BA9B006246D0 /* CJMSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425CB2754BA98006246D0 /* CJMSwizzle.h */; };
+		178426142754BA9B006246D0 /* CJMInAppNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425CC2754BA98006246D0 /* CJMInAppNotification.m */; };
+		178426152754BA9B006246D0 /* CJMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425CD2754BA98006246D0 /* CJMConstants.m */; };
+		178426162754BA9B006246D0 /* CJMInAppFCManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425CE2754BA98006246D0 /* CJMInAppFCManager.h */; };
+		178426172754BA9B006246D0 /* CJMInAppResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425CF2754BA98006246D0 /* CJMInAppResources.m */; };
+		178426182754BA9B006246D0 /* CJMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425D02754BA99006246D0 /* CJMDeviceInfo.m */; };
+		178426192754BA9B006246D0 /* CJMInAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425D12754BA99006246D0 /* CJMInAppUtils.m */; };
+		1784261A2754BA9B006246D0 /* CJMEventDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D22754BA99006246D0 /* CJMEventDetail.h */; };
+		1784261B2754BA9B006246D0 /* CJMNotificationButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D32754BA99006246D0 /* CJMNotificationButton.h */; };
+		1784261C2754BA9B006246D0 /* CJMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D42754BA99006246D0 /* CJMUtils.h */; };
+		1784261D2754BA9B006246D0 /* CJMCertificatePinning.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D52754BA99006246D0 /* CJMCertificatePinning.h */; };
+		1784261E2754BA9B006246D0 /* CJMPushNotificationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D62754BA99006246D0 /* CJMPushNotificationDelegate.h */; };
+		1784261F2754BA9B006246D0 /* CJM.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425D72754BA99006246D0 /* CJM.m */; };
+		178426202754BA9B006246D0 /* CJMLocalDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D82754BA99006246D0 /* CJMLocalDataStore.h */; };
+		178426212754BA9B006246D0 /* CJMProfileBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425D92754BA99006246D0 /* CJMProfileBuilder.h */; };
+		178426222754BA9B006246D0 /* CJMInstanceConfigPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425DA2754BA99006246D0 /* CJMInstanceConfigPrivate.h */; };
+		178426232754BA9B006246D0 /* CJMPlistInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425DB2754BA99006246D0 /* CJMPlistInfo.h */; };
+		178426242754BA9B006246D0 /* CJM+SSLPinning.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425DC2754BA99006246D0 /* CJM+SSLPinning.h */; };
+		178426252754BA9B006246D0 /* CJMJSInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425DD2754BA99006246D0 /* CJMJSInterface.h */; };
+		178426262754BA9B006246D0 /* CJMInAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425DE2754BA99006246D0 /* CJMInAppUtils.h */; };
+		178426272754BA9B006246D0 /* CJMDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425DF2754BA9A006246D0 /* CJMDeviceInfo.h */; };
+		178426282754BA9B006246D0 /* CJMEventBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425E02754BA9A006246D0 /* CJMEventBuilder.h */; };
+		178426292754BA9B006246D0 /* CJMSyncDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425E12754BA9A006246D0 /* CJMSyncDelegate.h */; };
+		1784262A2754BA9B006246D0 /* CJM+Inbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425E22754BA9A006246D0 /* CJM+Inbox.h */; };
+		1784262B2754BA9B006246D0 /* CJMBuildInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425E32754BA9A006246D0 /* CJMBuildInfo.h */; };
+		1784262C2754BA9B006246D0 /* CJMValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425E42754BA9A006246D0 /* CJMValidator.m */; };
+		1784262D2754BA9B006246D0 /* CJMPlistInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425E52754BA9A006246D0 /* CJMPlistInfo.m */; };
+		1784262E2754BA9B006246D0 /* CJMValidationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425E62754BA9A006246D0 /* CJMValidationResult.m */; };
+		1784262F2754BA9B006246D0 /* DigiCertSHA2SecureServerCA.crt in Resources */ = {isa = PBXBuildFile; fileRef = 178425E72754BA9A006246D0 /* DigiCertSHA2SecureServerCA.crt */; };
+		178426302754BA9B006246D0 /* CJMInAppDisplayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425E82754BA9A006246D0 /* CJMInAppDisplayViewController.h */; };
+		178426312754BA9B006246D0 /* CJM.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425E92754BA9A006246D0 /* CJM.h */; };
+		178426322754BA9B006246D0 /* CJMTrackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425EA2754BA9A006246D0 /* CJMTrackedViewController.m */; };
+		178426332754BA9B006246D0 /* CJMTrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425EB2754BA9A006246D0 /* CJMTrackedViewController.h */; };
+		178426342754BA9B006246D0 /* CJMUTMDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425EC2754BA9A006246D0 /* CJMUTMDetail.m */; };
+		178426352754BA9B006246D0 /* DigiCertGlobalRootCA.crt in Resources */ = {isa = PBXBuildFile; fileRef = 178425ED2754BA9A006246D0 /* DigiCertGlobalRootCA.crt */; };
+		178426362754BA9B006246D0 /* CJMInAppFCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425EE2754BA9A006246D0 /* CJMInAppFCManager.m */; };
+		178426372754BA9B006246D0 /* CJMKnownProfileFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425EF2754BA9B006246D0 /* CJMKnownProfileFields.h */; };
+		178426382754BA9B006246D0 /* CJMSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425F02754BA9B006246D0 /* CJMSwizzle.m */; };
+		178426392754BA9B006246D0 /* CJMInAppNotificationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425F12754BA9B006246D0 /* CJMInAppNotificationDelegate.h */; };
+		1784263A2754BA9B006246D0 /* CJMEventDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425F22754BA9B006246D0 /* CJMEventDetail.m */; };
+		1784263B2754BA9B006246D0 /* CJMInstanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425F32754BA9B006246D0 /* CJMInstanceConfig.m */; };
+		1784263C2754BA9B006246D0 /* CJMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425F42754BA9B006246D0 /* CJMConstants.h */; };
+		1784263D2754BA9B006246D0 /* CJMInAppDisplayViewControllerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425F52754BA9B006246D0 /* CJMInAppDisplayViewControllerPrivate.h */; };
+		1784263E2754BA9B006246D0 /* CJMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425F62754BA9B006246D0 /* CJMUtils.m */; };
+		1784263F2754BA9B006246D0 /* CJMInAppResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425F72754BA9B006246D0 /* CJMInAppResources.h */; };
+		178426402754BA9B006246D0 /* CJMValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425F82754BA9B006246D0 /* CJMValidator.h */; };
+		178426412754BA9B006246D0 /* CJMInAppDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178425F92754BA9B006246D0 /* CJMInAppDisplayViewController.m */; };
+		178426422754BA9B006246D0 /* CJMUTMDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 178425FA2754BA9B006246D0 /* CJMUTMDetail.h */; };
+		178426452754DC25006246D0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178426442754DC24006246D0 /* SDWebImage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		178423B827547873006246D0 /* CJMVNPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CJMVNPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		178423D3275478F1006246D0 /* CJMNSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJMNSString+Base64.h"; sourceTree = "<group>"; };
+		178423D4275478F1006246D0 /* CJMAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMAESCrypt.h; sourceTree = "<group>"; };
+		178423D5275478F1006246D0 /* CJMNSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJMNSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		178423D6275478F1006246D0 /* CJMNSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJMNSData+Base64.m"; sourceTree = "<group>"; };
+		178423D7275478F1006246D0 /* CJMNSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJMNSString+Base64.m"; sourceTree = "<group>"; };
+		178423D8275478F1006246D0 /* CJMAESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMAESCrypt.m; sourceTree = "<group>"; };
+		178423D9275478F1006246D0 /* CJMNSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJMNSData+Base64.h"; sourceTree = "<group>"; };
+		178423DA275478F1006246D0 /* CJMNSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJMNSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		178423E3275478FA006246D0 /* CJMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMManager.h; sourceTree = "<group>"; };
+		178423E4275478FA006246D0 /* CJMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMManager.m; sourceTree = "<group>"; };
+		178423E92754790B006246D0 /* CJMProductConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMProductConfig.m; sourceTree = "<group>"; };
+		178423EA2754790B006246D0 /* CJMConfigValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMConfigValue.m; sourceTree = "<group>"; };
+		178423EB2754790B006246D0 /* CJMProductConfigPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMProductConfigPrivate.h; sourceTree = "<group>"; };
+		178423ED2754790B006246D0 /* CJMProductConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMProductConfigController.m; sourceTree = "<group>"; };
+		178423EE2754790B006246D0 /* CJMProductConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMProductConfigController.h; sourceTree = "<group>"; };
+		178423F627547A19006246D0 /* CJMFeatureFlagsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMFeatureFlagsPrivate.h; sourceTree = "<group>"; };
+		178423F727547A19006246D0 /* CJMFeatureFlags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMFeatureFlags.m; sourceTree = "<group>"; };
+		178423F927547A19006246D0 /* CJMFeatureFlagsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMFeatureFlagsController.m; sourceTree = "<group>"; };
+		178423FA27547A19006246D0 /* CJMFeatureFlagsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMFeatureFlagsController.h; sourceTree = "<group>"; };
+		1784240127548138006246D0 /* CJMDisplayUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMDisplayUnit.m; sourceTree = "<group>"; };
+		1784240227548138006246D0 /* CJMDisplayUnitContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMDisplayUnitContent.m; sourceTree = "<group>"; };
+		1784240427548138006246D0 /* CJMDisplayUnitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMDisplayUnitController.h; sourceTree = "<group>"; };
+		1784240527548138006246D0 /* CJMDisplayUnitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMDisplayUnitController.m; sourceTree = "<group>"; };
+		1784240D275482BD006246D0 /* CJMWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMWebSocket.h; sourceTree = "<group>"; };
+		1784240E275482BD006246D0 /* CJMWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMWebSocket.m; sourceTree = "<group>"; };
+		17842410275482BD006246D0 /* CJMABTestEditorSnapshotMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorSnapshotMessageResponse.h; sourceTree = "<group>"; };
+		17842411275482BD006246D0 /* CJMABTestEditorHandshakeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorHandshakeMessage.h; sourceTree = "<group>"; };
+		17842412275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorDeviceInfoMessageRequest.m; sourceTree = "<group>"; };
+		17842413275482BD006246D0 /* CJMABTestEditorVarsMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorVarsMessageResponse.m; sourceTree = "<group>"; };
+		17842414275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorDeviceInfoMessageResponse.h; sourceTree = "<group>"; };
+		17842415275482BD006246D0 /* CJMABTestEditorVarsMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorVarsMessageRequest.h; sourceTree = "<group>"; };
+		17842416275482BD006246D0 /* CJMABTestEditorSnapshotMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorSnapshotMessageRequest.h; sourceTree = "<group>"; };
+		17842417275482BD006246D0 /* CJMABTestEditorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorMessage.m; sourceTree = "<group>"; };
+		17842418275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorDeviceInfoMessageRequest.h; sourceTree = "<group>"; };
+		17842419275482BD006246D0 /* CJMABTestEditorHandshakeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorHandshakeMessage.m; sourceTree = "<group>"; };
+		1784241A275482BD006246D0 /* CJMABTestEditorSnapshotMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorSnapshotMessageResponse.m; sourceTree = "<group>"; };
+		1784241B275482BD006246D0 /* CJMABTestEditorVarsMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorVarsMessageResponse.h; sourceTree = "<group>"; };
+		1784241C275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorDeviceInfoMessageResponse.m; sourceTree = "<group>"; };
+		1784241D275482BD006246D0 /* CJMABTestEditorVarsMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorVarsMessageRequest.m; sourceTree = "<group>"; };
+		1784241E275482BD006246D0 /* CJMABTestEditorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestEditorMessage.h; sourceTree = "<group>"; };
+		1784241F275482BD006246D0 /* CJMABTestEditorSnapshotMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestEditorSnapshotMessageRequest.m; sourceTree = "<group>"; };
+		17842420275482BD006246D0 /* CJMSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMSwizzler.h; sourceTree = "<group>"; };
+		17842421275482BD006246D0 /* CJMEditorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMEditorSession.h; sourceTree = "<group>"; };
+		17842422275482BD006246D0 /* NSInvocation+CJMHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+CJMHelper.m"; sourceTree = "<group>"; };
+		17842423275482BD006246D0 /* CJMEditorImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMEditorImageCache.h; sourceTree = "<group>"; };
+		17842425275482BE006246D0 /* CJMObjectSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMObjectSelector.m; sourceTree = "<group>"; };
+		17842426275482BE006246D0 /* CJMClassDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMClassDescription.h; sourceTree = "<group>"; };
+		17842427275482BE006246D0 /* CJMObjectSequenceGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMObjectSequenceGenerator.m; sourceTree = "<group>"; };
+		17842428275482BE006246D0 /* CJMObjectIdentityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMObjectIdentityProvider.h; sourceTree = "<group>"; };
+		17842429275482BE006246D0 /* CJMEnumDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMEnumDescription.h; sourceTree = "<group>"; };
+		1784242A275482BE006246D0 /* CJMPropertyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMPropertyDescription.h; sourceTree = "<group>"; };
+		1784242B275482BE006246D0 /* CJMApplicationStateSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMApplicationStateSerializer.h; sourceTree = "<group>"; };
+		1784242C275482BE006246D0 /* CJMObjectSerializerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMObjectSerializerContext.m; sourceTree = "<group>"; };
+		1784242D275482BE006246D0 /* CJMObjectSerializerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMObjectSerializerConfig.h; sourceTree = "<group>"; };
+		1784242E275482BE006246D0 /* CJMObjectSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMObjectSerializer.h; sourceTree = "<group>"; };
+		1784242F275482BE006246D0 /* CJMTypeDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMTypeDescription.h; sourceTree = "<group>"; };
+		17842430275482BE006246D0 /* CJMObjectIdentityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMObjectIdentityProvider.m; sourceTree = "<group>"; };
+		17842431275482BE006246D0 /* CJMObjectSequenceGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMObjectSequenceGenerator.h; sourceTree = "<group>"; };
+		17842432275482BE006246D0 /* CJMObjectSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMObjectSelector.h; sourceTree = "<group>"; };
+		17842433275482BE006246D0 /* CJMClassDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMClassDescription.m; sourceTree = "<group>"; };
+		17842434275482BE006246D0 /* CJMPropertyDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMPropertyDescription.m; sourceTree = "<group>"; };
+		17842435275482BE006246D0 /* CJMEnumDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMEnumDescription.m; sourceTree = "<group>"; };
+		17842436275482BE006246D0 /* CJMObjectSerializerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMObjectSerializerConfig.m; sourceTree = "<group>"; };
+		17842437275482BE006246D0 /* CJMObjectSerializerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMObjectSerializerContext.h; sourceTree = "<group>"; };
+		17842438275482BE006246D0 /* CJMApplicationStateSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMApplicationStateSerializer.m; sourceTree = "<group>"; };
+		17842439275482BE006246D0 /* CJMTypeDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMTypeDescription.m; sourceTree = "<group>"; };
+		1784243A275482BE006246D0 /* CJMObjectSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMObjectSerializer.m; sourceTree = "<group>"; };
+		1784243C275482BE006246D0 /* CJMNSDictionaryFromUIFontValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromUIFontValueTransformer.m; sourceTree = "<group>"; };
+		1784243D275482BE006246D0 /* CJMNSStringFromUIColorValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSStringFromUIColorValueTransformer.m; sourceTree = "<group>"; };
+		1784243E275482BE006246D0 /* CJMValueTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMValueTransformers.h; sourceTree = "<group>"; };
+		1784243F275482BE006246D0 /* CJMNSDictionaryFromUIImageValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromUIImageValueTransformer.m; sourceTree = "<group>"; };
+		17842440275482BE006246D0 /* CJMNSDictionaryFromCGSizeValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromCGSizeValueTransformer.m; sourceTree = "<group>"; };
+		17842441275482BE006246D0 /* CJMPassThroughValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMPassThroughValueTransformer.m; sourceTree = "<group>"; };
+		17842442275482BE006246D0 /* CJMNSDictionaryFromNSAttributedStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromNSAttributedStringValueTransformer.m; sourceTree = "<group>"; };
+		17842443275482BE006246D0 /* CJMNSStringFromCGColorRefValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSStringFromCGColorRefValueTransformer.m; sourceTree = "<group>"; };
+		17842444275482BE006246D0 /* CJMCGFloatFromNSNumberValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCGFloatFromNSNumberValueTransformer.m; sourceTree = "<group>"; };
+		17842445275482BE006246D0 /* CJMNSDictionaryFromCATransform3DValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromCATransform3DValueTransformer.m; sourceTree = "<group>"; };
+		17842446275482BE006246D0 /* CJMSDictionaryFromCGAffineTransformValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMSDictionaryFromCGAffineTransformValueTransformer.m; sourceTree = "<group>"; };
+		17842447275482BE006246D0 /* CJMNSDictionaryFromUIEdgeInsetsValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromUIEdgeInsetsValueTransformer.m; sourceTree = "<group>"; };
+		17842448275482BE006246D0 /* CJMNSNumberFromBOOLValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSNumberFromBOOLValueTransformer.m; sourceTree = "<group>"; };
+		17842449275482BE006246D0 /* CJMNSDictionaryFromCGRectValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromCGRectValueTransformer.m; sourceTree = "<group>"; };
+		1784244A275482BE006246D0 /* CJMNSDictionaryFromCGPointValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNSDictionaryFromCGPointValueTransformer.m; sourceTree = "<group>"; };
+		1784244B275482BE006246D0 /* CJMEditorSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMEditorSession.m; sourceTree = "<group>"; };
+		1784244C275482BE006246D0 /* CJMSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMSwizzler.m; sourceTree = "<group>"; };
+		1784244D275482BE006246D0 /* NSInvocation+CJMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+CJMHelper.h"; sourceTree = "<group>"; };
+		1784244E275482BE006246D0 /* CJMEditorImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMEditorImageCache.m; sourceTree = "<group>"; };
+		17842450275482BE006246D0 /* CJMABTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestUtils.h; sourceTree = "<group>"; };
+		17842451275482BE006246D0 /* CJMABTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestUtils.m; sourceTree = "<group>"; };
+		17842453275482BE006246D0 /* CJMABVariant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABVariant.h; sourceTree = "<group>"; };
+		17842454275482BE006246D0 /* CJMVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMVar.h; sourceTree = "<group>"; };
+		17842455275482BE006246D0 /* CJMVarCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMVarCache.h; sourceTree = "<group>"; };
+		17842456275482BE006246D0 /* CJMVar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMVar.m; sourceTree = "<group>"; };
+		17842457275482BE006246D0 /* CJMABVariant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABVariant.m; sourceTree = "<group>"; };
+		17842458275482BE006246D0 /* CJMVarCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMVarCache.m; sourceTree = "<group>"; };
+		1784245A275482BE006246D0 /* CJMABTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMABTestController.h; sourceTree = "<group>"; };
+		1784245B275482BE006246D0 /* CJMABTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMABTestController.m; sourceTree = "<group>"; };
+		178424A727549067006246D0 /* CJMInboxSimpleMessageCell~land.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInboxSimpleMessageCell~land.xib"; sourceTree = "<group>"; };
+		178424A827549067006246D0 /* CJMCarouselMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCarouselMessageCell.m; sourceTree = "<group>"; };
+		178424A927549067006246D0 /* CJMInboxIconMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxIconMessageCell.h; sourceTree = "<group>"; };
+		178424AA27549067006246D0 /* CJMInboxSimpleMessageCell~port.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInboxSimpleMessageCell~port.xib"; sourceTree = "<group>"; };
+		178424AB27549068006246D0 /* CJMInboxIconMessageCell~land.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInboxIconMessageCell~land.xib"; sourceTree = "<group>"; };
+		178424AC27549068006246D0 /* CJMCarouselImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMCarouselImageMessageCell.h; sourceTree = "<group>"; };
+		178424AD27549068006246D0 /* CJMInboxIconMessageCell~port.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInboxIconMessageCell~port.xib"; sourceTree = "<group>"; };
+		178424AE27549068006246D0 /* CJMInboxSimpleMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxSimpleMessageCell.m; sourceTree = "<group>"; };
+		178424AF27549068006246D0 /* CJMInboxBaseMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxBaseMessageCell.m; sourceTree = "<group>"; };
+		178424B027549068006246D0 /* CJMInboxIconMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxIconMessageCell.m; sourceTree = "<group>"; };
+		178424B127549068006246D0 /* CJMCarouselMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMCarouselMessageCell.h; sourceTree = "<group>"; };
+		178424B227549068006246D0 /* CJMCarouselImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCarouselImageMessageCell.m; sourceTree = "<group>"; };
+		178424B327549068006246D0 /* CJMCarouselImageMessageCell~land.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCarouselImageMessageCell~land.xib"; sourceTree = "<group>"; };
+		178424B427549068006246D0 /* CJMInboxSimpleMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxSimpleMessageCell.h; sourceTree = "<group>"; };
+		178424B527549068006246D0 /* CJMCarouselImageMessageCell~port.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCarouselImageMessageCell~port.xib"; sourceTree = "<group>"; };
+		178424B627549068006246D0 /* CJMInboxBaseMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxBaseMessageCell.h; sourceTree = "<group>"; };
+		178424B727549068006246D0 /* CJMCarouselMessageCell~land.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCarouselMessageCell~land.xib"; sourceTree = "<group>"; };
+		178424B827549068006246D0 /* CJMCarouselMessageCell~port.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCarouselMessageCell~port.xib"; sourceTree = "<group>"; };
+		178424BA27549068006246D0 /* CJMInboxStyleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxStyleConfig.m; sourceTree = "<group>"; };
+		178424BC27549068006246D0 /* CJMVideoThumbnailGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMVideoThumbnailGenerator.m; sourceTree = "<group>"; };
+		178424BD27549068006246D0 /* volume_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_off.png; sourceTree = "<group>"; };
+		178424BE27549068006246D0 /* volume_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_on.png; sourceTree = "<group>"; };
+		178424BF27549068006246D0 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		178424C027549068006246D0 /* CJMVideoThumbnailGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMVideoThumbnailGenerator.h; sourceTree = "<group>"; };
+		178424C127549068006246D0 /* ct_default_portrait_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_default_portrait_image.png; sourceTree = "<group>"; };
+		178424C227549068006246D0 /* ct_default_landscape_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_default_landscape_image.png; sourceTree = "<group>"; };
+		178424C327549068006246D0 /* ct_default_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ct_default_video.png; sourceTree = "<group>"; };
+		178424C527549068006246D0 /* CJMInboxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxUtils.h; sourceTree = "<group>"; };
+		178424C627549068006246D0 /* CJMUserMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJMUserMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		178424C727549068006246D0 /* CJMMessageMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJMMessageMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		178424C827549068006246D0 /* CJMMessageMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMMessageMO.h; sourceTree = "<group>"; };
+		178424C927549068006246D0 /* CJMUserMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMUserMO.h; sourceTree = "<group>"; };
+		178424CA27549068006246D0 /* CJMInboxMessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxMessageContent.m; sourceTree = "<group>"; };
+		178424CB27549068006246D0 /* CJMMessageMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJMMessageMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		178424CC27549068006246D0 /* CJMUserMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJMUserMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		178424CD27549068006246D0 /* CJMInboxUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxUtils.m; sourceTree = "<group>"; };
+		178424CE27549068006246D0 /* CJMInboxMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxMessage.m; sourceTree = "<group>"; };
+		178424CF27549068006246D0 /* CJMMessageMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMMessageMO.m; sourceTree = "<group>"; };
+		178424D127549068006246D0 /* Inbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Inbox.xcdatamodel; sourceTree = "<group>"; };
+		178424D227549068006246D0 /* CJMUserMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMUserMO.m; sourceTree = "<group>"; };
+		178424D427549068006246D0 /* CJMInboxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxController.m; sourceTree = "<group>"; };
+		178424D527549068006246D0 /* CJMInboxViewControllerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxViewControllerPrivate.h; sourceTree = "<group>"; };
+		178424D627549068006246D0 /* CJMInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxViewController.m; sourceTree = "<group>"; };
+		178424D727549068006246D0 /* CJMInboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJMInboxViewController.xib; sourceTree = "<group>"; };
+		178424D827549068006246D0 /* CJMInboxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxController.h; sourceTree = "<group>"; };
+		178424DA27549068006246D0 /* CJMInboxMessageActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInboxMessageActionView.h; sourceTree = "<group>"; };
+		178424DB27549068006246D0 /* UIView+CJMToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CJMToast.m"; sourceTree = "<group>"; };
+		178424DC27549068006246D0 /* CJMCarouselImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCarouselImageView.m; sourceTree = "<group>"; };
+		178424DD27549068006246D0 /* CJMCarouselImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJMCarouselImageView.xib; sourceTree = "<group>"; };
+		178424DE27549068006246D0 /* CJMSwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMSwipeView.m; sourceTree = "<group>"; };
+		178424DF27549068006246D0 /* CJMCarouselImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMCarouselImageView.h; sourceTree = "<group>"; };
+		178424E027549068006246D0 /* UIView+CJMToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CJMToast.h"; sourceTree = "<group>"; };
+		178424E127549068006246D0 /* CJMInboxMessageActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInboxMessageActionView.m; sourceTree = "<group>"; };
+		178424E227549068006246D0 /* CJMSwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMSwipeView.h; sourceTree = "<group>"; };
+		1784251A2754B5B6006246D0 /* CJMFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMFooterViewController.h; sourceTree = "<group>"; };
+		1784251B2754B5B6006246D0 /* CJMHalfInterstitialViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		1784251C2754B5B6006246D0 /* CJMDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMDismissButton.m; sourceTree = "<group>"; };
+		1784251D2754B5B6006246D0 /* CJMHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMHeaderViewController.m; sourceTree = "<group>"; };
+		1784251E2754B5B6006246D0 /* CJMHalfInterstitialViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialViewController~ipad.xib"; sourceTree = "<group>"; };
+		1784251F2754B5B6006246D0 /* CJMHalfInterstitialViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425202754B5B6006246D0 /* CJMHalfInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMHalfInterstitialViewController.m; sourceTree = "<group>"; };
+		178425212754B5B6006246D0 /* CJMBaseHeaderFooterViewControllerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMBaseHeaderFooterViewControllerPrivate.h; sourceTree = "<group>"; };
+		178425222754B5B6006246D0 /* CJMInterstitialViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialViewController~ipad.xib"; sourceTree = "<group>"; };
+		178425232754B5B6006246D0 /* CJMInterstitialImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInterstitialImageViewController.m; sourceTree = "<group>"; };
+		178425242754B5B6006246D0 /* CJMAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMAVPlayerViewController.h; sourceTree = "<group>"; };
+		178425252754B5B6006246D0 /* CJMHeaderViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHeaderViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425262754B5B6006246D0 /* CJMBaseHeaderFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMBaseHeaderFooterViewController.m; sourceTree = "<group>"; };
+		178425272754B5B6006246D0 /* CJMCoverImageViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverImageViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425282754B5B6006246D0 /* CJMHalfInterstitialViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425292754B5B6006246D0 /* CJMCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMCoverViewController.h; sourceTree = "<group>"; };
+		1784252A2754B5B6006246D0 /* CJMCoverImageViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverImageViewController~ipadland.xib"; sourceTree = "<group>"; };
+		1784252B2754B5B6006246D0 /* CJMHalfInterstitialImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMHalfInterstitialImageViewController.m; sourceTree = "<group>"; };
+		1784252C2754B5B6006246D0 /* CJMImageInAppViewControllerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMImageInAppViewControllerPrivate.h; sourceTree = "<group>"; };
+		1784252D2754B5B6006246D0 /* CJMCoverImageViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverImageViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		1784252F2754B5B6006246D0 /* ic_shrink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_shrink@2x.png"; sourceTree = "<group>"; };
+		178425302754B5B6006246D0 /* ic_play@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_play@1x.png"; sourceTree = "<group>"; };
+		178425312754B5B6006246D0 /* ic_shrink@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_shrink@3x.png"; sourceTree = "<group>"; };
+		178425322754B5B6006246D0 /* ic_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_thumb.png; sourceTree = "<group>"; };
+		178425332754B5B6006246D0 /* sound-wave-headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-wave-headphones.png"; sourceTree = "<group>"; };
+		178425342754B5B6006246D0 /* ic_expand@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_expand@3x.png"; sourceTree = "<group>"; };
+		178425352754B5B6006246D0 /* ic_expand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_expand@2x.png"; sourceTree = "<group>"; };
+		178425362754B5B6006246D0 /* ic_pause@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pause@1x.png"; sourceTree = "<group>"; };
+		178425372754B5B6006246D0 /* ic_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pause@2x.png"; sourceTree = "<group>"; };
+		178425382754B5B6006246D0 /* ic_expand@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_expand@1x.png"; sourceTree = "<group>"; };
+		178425392754B5B6006246D0 /* ic_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pause@3x.png"; sourceTree = "<group>"; };
+		1784253A2754B5B6006246D0 /* ic_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_play@3x.png"; sourceTree = "<group>"; };
+		1784253B2754B5B6006246D0 /* ic_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_play@2x.png"; sourceTree = "<group>"; };
+		1784253C2754B5B6006246D0 /* ic_shrink@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_shrink@1x.png"; sourceTree = "<group>"; };
+		1784253D2754B5B6006246D0 /* CJMFooterViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMFooterViewController~ipad.xib"; sourceTree = "<group>"; };
+		1784253E2754B5B6006246D0 /* CJMInterstitialImageViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialImageViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		1784253F2754B5B6006246D0 /* CJMCoverImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCoverImageViewController.m; sourceTree = "<group>"; };
+		178425402754B5B6006246D0 /* CJMInterstitialImageViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialImageViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425412754B5B6006246D0 /* CJMInterstitialImageViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialImageViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425422754B5B6006246D0 /* CJMAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMAlertViewController.h; sourceTree = "<group>"; };
+		178425432754B5B6006246D0 /* CJMInterstitialViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425442754B5B6006246D0 /* CJMImageInAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMImageInAppViewController.h; sourceTree = "<group>"; };
+		178425452754B5B6006246D0 /* CJMInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInterstitialViewController.m; sourceTree = "<group>"; };
+		178425462754B5B6006246D0 /* CJMCoverViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425472754B5B6006246D0 /* CJMHeaderViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHeaderViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		178425482754B5B6006246D0 /* CJMCoverViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverViewController~ipad.xib"; sourceTree = "<group>"; };
+		178425492754B5B6006246D0 /* CJMInAppHTMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppHTMLViewController.m; sourceTree = "<group>"; };
+		1784254A2754B5B6006246D0 /* CJMHeaderViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHeaderViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		1784254B2754B5B6006246D0 /* CJMCoverViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		1784254C2754B5B6006246D0 /* CJMInterstitialImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInterstitialImageViewController.h; sourceTree = "<group>"; };
+		1784254D2754B5B6006246D0 /* CJMAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMAVPlayerViewController.m; sourceTree = "<group>"; };
+		1784254E2754B5B6006246D0 /* CJMHalfInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMHalfInterstitialViewController.h; sourceTree = "<group>"; };
+		1784254F2754B5B6006246D0 /* CJMDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMDismissButton.h; sourceTree = "<group>"; };
+		178425502754B5B6006246D0 /* CJMHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMHeaderViewController.h; sourceTree = "<group>"; };
+		178425512754B5B6006246D0 /* CJMHeaderViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHeaderViewController~ipad.xib"; sourceTree = "<group>"; };
+		178425522754B5B6006246D0 /* CJMFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMFooterViewController.m; sourceTree = "<group>"; };
+		178425532754B5B6006246D0 /* CJMHalfInterstitialImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMHalfInterstitialImageViewController.h; sourceTree = "<group>"; };
+		178425542754B5B6006246D0 /* CJMInterstitialViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425552754B5B6006246D0 /* CJMFooterViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMFooterViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		178425562754B5B6006246D0 /* CJMCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCoverViewController.m; sourceTree = "<group>"; };
+		178425572754B5B6006246D0 /* CJMFooterViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMFooterViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425582754B5B6006246D0 /* CJMInterstitialViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		178425592754B5B6006246D0 /* CJMBaseHeaderFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMBaseHeaderFooterViewController.h; sourceTree = "<group>"; };
+		1784255A2754B5B6006246D0 /* CJMAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMAlertViewController.m; sourceTree = "<group>"; };
+		1784255B2754B5B6006246D0 /* CJMImageInAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMImageInAppViewController.m; sourceTree = "<group>"; };
+		1784255C2754B5B6006246D0 /* CJMHalfInterstitialImageViewController~iphoneland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialImageViewController~iphoneland.xib"; sourceTree = "<group>"; };
+		1784255D2754B5B6006246D0 /* CJMHalfInterstitialImageViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialImageViewController~ipad.xib"; sourceTree = "<group>"; };
+		1784255E2754B5B6006246D0 /* CJMCoverImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMCoverImageViewController.h; sourceTree = "<group>"; };
+		1784255F2754B5B6006246D0 /* CJMInterstitialImageViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMInterstitialImageViewController~ipad.xib"; sourceTree = "<group>"; };
+		178425602754B5B6006246D0 /* CJMHalfInterstitialImageViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialImageViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425612754B5B6006246D0 /* CJMHalfInterstitialImageViewController~iphoneport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMHalfInterstitialImageViewController~iphoneport.xib"; sourceTree = "<group>"; };
+		178425622754B5B6006246D0 /* CJMCoverViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425632754B5B6006246D0 /* CJMInAppHTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppHTMLViewController.h; sourceTree = "<group>"; };
+		178425642754B5B6006246D0 /* CJMCoverImageViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMCoverImageViewController~ipad.xib"; sourceTree = "<group>"; };
+		178425652754B5B6006246D0 /* CJMFooterViewController~ipadland.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CJMFooterViewController~ipadland.xib"; sourceTree = "<group>"; };
+		178425662754B5B6006246D0 /* CJMInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInterstitialViewController.h; sourceTree = "<group>"; };
+		178425B32754BA97006246D0 /* CJMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMLocationManager.h; sourceTree = "<group>"; };
+		178425B42754BA97006246D0 /* CJMKnownProfileFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMKnownProfileFields.m; sourceTree = "<group>"; };
+		178425B52754BA97006246D0 /* CJMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMLogger.h; sourceTree = "<group>"; };
+		178425B62754BA97006246D0 /* CJMValidationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMValidationResult.h; sourceTree = "<group>"; };
+		178425B72754BA97006246D0 /* CJMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMLocationManager.m; sourceTree = "<group>"; };
+		178425B82754BA97006246D0 /* CJMJSInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMJSInterface.m; sourceTree = "<group>"; };
+		178425B92754BA97006246D0 /* CJMCertificatePinning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMCertificatePinning.m; sourceTree = "<group>"; };
+		178425BA2754BA97006246D0 /* CJMUriHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMUriHelper.m; sourceTree = "<group>"; };
+		178425BB2754BA97006246D0 /* CJMEventBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMEventBuilder.m; sourceTree = "<group>"; };
+		178425BC2754BA97006246D0 /* CJM+ABTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJM+ABTesting.h"; sourceTree = "<group>"; };
+		178425BD2754BA97006246D0 /* CJMNotificationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMNotificationButton.m; sourceTree = "<group>"; };
+		178425BE2754BA97006246D0 /* CJM+ProductConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJM+ProductConfig.h"; sourceTree = "<group>"; };
+		178425BF2754BA97006246D0 /* CJMPinnedNSURLSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMPinnedNSURLSessionDelegate.h; sourceTree = "<group>"; };
+		178425C02754BA97006246D0 /* CJMInstanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInstanceConfig.h; sourceTree = "<group>"; };
+		178425C12754BA98006246D0 /* CJM+DisplayUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJM+DisplayUnit.h"; sourceTree = "<group>"; };
+		178425C22754BA98006246D0 /* CJMPinnedNSURLSessionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMPinnedNSURLSessionDelegate.m; sourceTree = "<group>"; };
+		178425C32754BA98006246D0 /* CJM+FeatureFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJM+FeatureFlags.h"; sourceTree = "<group>"; };
+		178425C42754BA98006246D0 /* CJMPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMPreferences.h; sourceTree = "<group>"; };
+		178425C52754BA98006246D0 /* CJMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMLogger.m; sourceTree = "<group>"; };
+		178425C62754BA98006246D0 /* CJMPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMPreferences.m; sourceTree = "<group>"; };
+		178425C72754BA98006246D0 /* CJMInAppNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppNotification.h; sourceTree = "<group>"; };
+		178425C82754BA98006246D0 /* CJMProfileBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMProfileBuilder.m; sourceTree = "<group>"; };
+		178425C92754BA98006246D0 /* CJMUriHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMUriHelper.h; sourceTree = "<group>"; };
+		178425CA2754BA98006246D0 /* CJMLocalDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMLocalDataStore.m; sourceTree = "<group>"; };
+		178425CB2754BA98006246D0 /* CJMSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMSwizzle.h; sourceTree = "<group>"; };
+		178425CC2754BA98006246D0 /* CJMInAppNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppNotification.m; sourceTree = "<group>"; };
+		178425CD2754BA98006246D0 /* CJMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMConstants.m; sourceTree = "<group>"; };
+		178425CE2754BA98006246D0 /* CJMInAppFCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppFCManager.h; sourceTree = "<group>"; };
+		178425CF2754BA98006246D0 /* CJMInAppResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppResources.m; sourceTree = "<group>"; };
+		178425D02754BA99006246D0 /* CJMDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMDeviceInfo.m; sourceTree = "<group>"; };
+		178425D12754BA99006246D0 /* CJMInAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppUtils.m; sourceTree = "<group>"; };
+		178425D22754BA99006246D0 /* CJMEventDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMEventDetail.h; sourceTree = "<group>"; };
+		178425D32754BA99006246D0 /* CJMNotificationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMNotificationButton.h; sourceTree = "<group>"; };
+		178425D42754BA99006246D0 /* CJMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMUtils.h; sourceTree = "<group>"; };
+		178425D52754BA99006246D0 /* CJMCertificatePinning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMCertificatePinning.h; sourceTree = "<group>"; };
+		178425D62754BA99006246D0 /* CJMPushNotificationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMPushNotificationDelegate.h; sourceTree = "<group>"; };
+		178425D72754BA99006246D0 /* CJM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJM.m; sourceTree = "<group>"; };
+		178425D82754BA99006246D0 /* CJMLocalDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMLocalDataStore.h; sourceTree = "<group>"; };
+		178425D92754BA99006246D0 /* CJMProfileBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMProfileBuilder.h; sourceTree = "<group>"; };
+		178425DA2754BA99006246D0 /* CJMInstanceConfigPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInstanceConfigPrivate.h; sourceTree = "<group>"; };
+		178425DB2754BA99006246D0 /* CJMPlistInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMPlistInfo.h; sourceTree = "<group>"; };
+		178425DC2754BA99006246D0 /* CJM+SSLPinning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJM+SSLPinning.h"; sourceTree = "<group>"; };
+		178425DD2754BA99006246D0 /* CJMJSInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMJSInterface.h; sourceTree = "<group>"; };
+		178425DE2754BA99006246D0 /* CJMInAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppUtils.h; sourceTree = "<group>"; };
+		178425DF2754BA9A006246D0 /* CJMDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMDeviceInfo.h; sourceTree = "<group>"; };
+		178425E02754BA9A006246D0 /* CJMEventBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMEventBuilder.h; sourceTree = "<group>"; };
+		178425E12754BA9A006246D0 /* CJMSyncDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMSyncDelegate.h; sourceTree = "<group>"; };
+		178425E22754BA9A006246D0 /* CJM+Inbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJM+Inbox.h"; sourceTree = "<group>"; };
+		178425E32754BA9A006246D0 /* CJMBuildInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMBuildInfo.h; sourceTree = "<group>"; };
+		178425E42754BA9A006246D0 /* CJMValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMValidator.m; sourceTree = "<group>"; };
+		178425E52754BA9A006246D0 /* CJMPlistInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMPlistInfo.m; sourceTree = "<group>"; };
+		178425E62754BA9A006246D0 /* CJMValidationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMValidationResult.m; sourceTree = "<group>"; };
+		178425E72754BA9A006246D0 /* DigiCertSHA2SecureServerCA.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigiCertSHA2SecureServerCA.crt; sourceTree = "<group>"; };
+		178425E82754BA9A006246D0 /* CJMInAppDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppDisplayViewController.h; sourceTree = "<group>"; };
+		178425E92754BA9A006246D0 /* CJM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJM.h; sourceTree = "<group>"; };
+		178425EA2754BA9A006246D0 /* CJMTrackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMTrackedViewController.m; sourceTree = "<group>"; };
+		178425EB2754BA9A006246D0 /* CJMTrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMTrackedViewController.h; sourceTree = "<group>"; };
+		178425EC2754BA9A006246D0 /* CJMUTMDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMUTMDetail.m; sourceTree = "<group>"; };
+		178425ED2754BA9A006246D0 /* DigiCertGlobalRootCA.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigiCertGlobalRootCA.crt; sourceTree = "<group>"; };
+		178425EE2754BA9A006246D0 /* CJMInAppFCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppFCManager.m; sourceTree = "<group>"; };
+		178425EF2754BA9B006246D0 /* CJMKnownProfileFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMKnownProfileFields.h; sourceTree = "<group>"; };
+		178425F02754BA9B006246D0 /* CJMSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMSwizzle.m; sourceTree = "<group>"; };
+		178425F12754BA9B006246D0 /* CJMInAppNotificationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppNotificationDelegate.h; sourceTree = "<group>"; };
+		178425F22754BA9B006246D0 /* CJMEventDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMEventDetail.m; sourceTree = "<group>"; };
+		178425F32754BA9B006246D0 /* CJMInstanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInstanceConfig.m; sourceTree = "<group>"; };
+		178425F42754BA9B006246D0 /* CJMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMConstants.h; sourceTree = "<group>"; };
+		178425F52754BA9B006246D0 /* CJMInAppDisplayViewControllerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppDisplayViewControllerPrivate.h; sourceTree = "<group>"; };
+		178425F62754BA9B006246D0 /* CJMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMUtils.m; sourceTree = "<group>"; };
+		178425F72754BA9B006246D0 /* CJMInAppResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMInAppResources.h; sourceTree = "<group>"; };
+		178425F82754BA9B006246D0 /* CJMValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMValidator.h; sourceTree = "<group>"; };
+		178425F92754BA9B006246D0 /* CJMInAppDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMInAppDisplayViewController.m; sourceTree = "<group>"; };
+		178425FA2754BA9B006246D0 /* CJMUTMDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMUTMDetail.h; sourceTree = "<group>"; };
+		178426442754DC24006246D0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Vendors/SDWebImage.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		178423B527547873006246D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178426452754DC25006246D0 /* SDWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		178423AE27547873006246D0 = {
+			isa = PBXGroup;
+			children = (
+				178423BA27547873006246D0 /* CJMVNPT */,
+				178423B927547873006246D0 /* Products */,
+				178426432754DC24006246D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		178423B927547873006246D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178423B827547873006246D0 /* CJMVNPT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		178423BA27547873006246D0 /* CJMVNPT */ = {
+			isa = PBXGroup;
+			children = (
+				178423D2275478F1006246D0 /* AES */,
+				178423E3275478FA006246D0 /* CJMManager.h */,
+				178423E4275478FA006246D0 /* CJMManager.m */,
+				178423E72754790B006246D0 /* ProductConfig */,
+				178423F427547A19006246D0 /* FeatureFlags */,
+				178423FF27548138006246D0 /* DisplayUnit */,
+				1784240A275482BD006246D0 /* ABTesting */,
+				178424A527549067006246D0 /* Inbox */,
+				178425192754B5B6006246D0 /* InApps */,
+				178425E92754BA9A006246D0 /* CJM.h */,
+				178425D72754BA99006246D0 /* CJM.m */,
+				178425BC2754BA97006246D0 /* CJM+ABTesting.h */,
+				178425C12754BA98006246D0 /* CJM+DisplayUnit.h */,
+				178425C32754BA98006246D0 /* CJM+FeatureFlags.h */,
+				178425E22754BA9A006246D0 /* CJM+Inbox.h */,
+				178425BE2754BA97006246D0 /* CJM+ProductConfig.h */,
+				178425DC2754BA99006246D0 /* CJM+SSLPinning.h */,
+				178425E32754BA9A006246D0 /* CJMBuildInfo.h */,
+				178425D22754BA99006246D0 /* CJMEventDetail.h */,
+				178425F22754BA9B006246D0 /* CJMEventDetail.m */,
+				178425F12754BA9B006246D0 /* CJMInAppNotificationDelegate.h */,
+				178425C02754BA97006246D0 /* CJMInstanceConfig.h */,
+				178425F32754BA9B006246D0 /* CJMInstanceConfig.m */,
+				178425DA2754BA99006246D0 /* CJMInstanceConfigPrivate.h */,
+				178425DD2754BA99006246D0 /* CJMJSInterface.h */,
+				178425B82754BA97006246D0 /* CJMJSInterface.m */,
+				178425D62754BA99006246D0 /* CJMPushNotificationDelegate.h */,
+				178425E12754BA9A006246D0 /* CJMSyncDelegate.h */,
+				178425EB2754BA9A006246D0 /* CJMTrackedViewController.h */,
+				178425EA2754BA9A006246D0 /* CJMTrackedViewController.m */,
+				178425FA2754BA9B006246D0 /* CJMUTMDetail.h */,
+				178425EC2754BA9A006246D0 /* CJMUTMDetail.m */,
+				178425D52754BA99006246D0 /* CJMCertificatePinning.h */,
+				178425B92754BA97006246D0 /* CJMCertificatePinning.m */,
+				178425F42754BA9B006246D0 /* CJMConstants.h */,
+				178425CD2754BA98006246D0 /* CJMConstants.m */,
+				178425DF2754BA9A006246D0 /* CJMDeviceInfo.h */,
+				178425D02754BA99006246D0 /* CJMDeviceInfo.m */,
+				178425E02754BA9A006246D0 /* CJMEventBuilder.h */,
+				178425BB2754BA97006246D0 /* CJMEventBuilder.m */,
+				178425E82754BA9A006246D0 /* CJMInAppDisplayViewController.h */,
+				178425F92754BA9B006246D0 /* CJMInAppDisplayViewController.m */,
+				178425F52754BA9B006246D0 /* CJMInAppDisplayViewControllerPrivate.h */,
+				178425CE2754BA98006246D0 /* CJMInAppFCManager.h */,
+				178425EE2754BA9A006246D0 /* CJMInAppFCManager.m */,
+				178425C72754BA98006246D0 /* CJMInAppNotification.h */,
+				178425CC2754BA98006246D0 /* CJMInAppNotification.m */,
+				178425F72754BA9B006246D0 /* CJMInAppResources.h */,
+				178425CF2754BA98006246D0 /* CJMInAppResources.m */,
+				178425DE2754BA99006246D0 /* CJMInAppUtils.h */,
+				178425D12754BA99006246D0 /* CJMInAppUtils.m */,
+				178425EF2754BA9B006246D0 /* CJMKnownProfileFields.h */,
+				178425B42754BA97006246D0 /* CJMKnownProfileFields.m */,
+				178425D82754BA99006246D0 /* CJMLocalDataStore.h */,
+				178425CA2754BA98006246D0 /* CJMLocalDataStore.m */,
+				178425B32754BA97006246D0 /* CJMLocationManager.h */,
+				178425B72754BA97006246D0 /* CJMLocationManager.m */,
+				178425B52754BA97006246D0 /* CJMLogger.h */,
+				178425C52754BA98006246D0 /* CJMLogger.m */,
+				178425D32754BA99006246D0 /* CJMNotificationButton.h */,
+				178425BD2754BA97006246D0 /* CJMNotificationButton.m */,
+				178425BF2754BA97006246D0 /* CJMPinnedNSURLSessionDelegate.h */,
+				178425C22754BA98006246D0 /* CJMPinnedNSURLSessionDelegate.m */,
+				178425DB2754BA99006246D0 /* CJMPlistInfo.h */,
+				178425E52754BA9A006246D0 /* CJMPlistInfo.m */,
+				178425C42754BA98006246D0 /* CJMPreferences.h */,
+				178425C62754BA98006246D0 /* CJMPreferences.m */,
+				178425D92754BA99006246D0 /* CJMProfileBuilder.h */,
+				178425C82754BA98006246D0 /* CJMProfileBuilder.m */,
+				178425CB2754BA98006246D0 /* CJMSwizzle.h */,
+				178425F02754BA9B006246D0 /* CJMSwizzle.m */,
+				178425C92754BA98006246D0 /* CJMUriHelper.h */,
+				178425BA2754BA97006246D0 /* CJMUriHelper.m */,
+				178425D42754BA99006246D0 /* CJMUtils.h */,
+				178425F62754BA9B006246D0 /* CJMUtils.m */,
+				178425B62754BA97006246D0 /* CJMValidationResult.h */,
+				178425E62754BA9A006246D0 /* CJMValidationResult.m */,
+				178425F82754BA9B006246D0 /* CJMValidator.h */,
+				178425E42754BA9A006246D0 /* CJMValidator.m */,
+				178425ED2754BA9A006246D0 /* DigiCertGlobalRootCA.crt */,
+				178425E72754BA9A006246D0 /* DigiCertSHA2SecureServerCA.crt */,
+			);
+			path = CJMVNPT;
+			sourceTree = "<group>";
+		};
+		178423D2275478F1006246D0 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				178423D3275478F1006246D0 /* CJMNSString+Base64.h */,
+				178423D4275478F1006246D0 /* CJMAESCrypt.h */,
+				178423D5275478F1006246D0 /* CJMNSData+CommonCrypto.h */,
+				178423D6275478F1006246D0 /* CJMNSData+Base64.m */,
+				178423D7275478F1006246D0 /* CJMNSString+Base64.m */,
+				178423D8275478F1006246D0 /* CJMAESCrypt.m */,
+				178423D9275478F1006246D0 /* CJMNSData+Base64.h */,
+				178423DA275478F1006246D0 /* CJMNSData+CommonCrypto.m */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+		178423E72754790B006246D0 /* ProductConfig */ = {
+			isa = PBXGroup;
+			children = (
+				178423E82754790B006246D0 /* models */,
+				178423EC2754790B006246D0 /* controllers */,
+			);
+			path = ProductConfig;
+			sourceTree = "<group>";
+		};
+		178423E82754790B006246D0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				178423E92754790B006246D0 /* CJMProductConfig.m */,
+				178423EA2754790B006246D0 /* CJMConfigValue.m */,
+				178423EB2754790B006246D0 /* CJMProductConfigPrivate.h */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		178423EC2754790B006246D0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				178423ED2754790B006246D0 /* CJMProductConfigController.m */,
+				178423EE2754790B006246D0 /* CJMProductConfigController.h */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		178423F427547A19006246D0 /* FeatureFlags */ = {
+			isa = PBXGroup;
+			children = (
+				178423F527547A19006246D0 /* models */,
+				178423F827547A19006246D0 /* controllers */,
+			);
+			path = FeatureFlags;
+			sourceTree = "<group>";
+		};
+		178423F527547A19006246D0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				178423F627547A19006246D0 /* CJMFeatureFlagsPrivate.h */,
+				178423F727547A19006246D0 /* CJMFeatureFlags.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		178423F827547A19006246D0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				178423F927547A19006246D0 /* CJMFeatureFlagsController.m */,
+				178423FA27547A19006246D0 /* CJMFeatureFlagsController.h */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		178423FF27548138006246D0 /* DisplayUnit */ = {
+			isa = PBXGroup;
+			children = (
+				1784240027548138006246D0 /* models */,
+				1784240327548138006246D0 /* controllers */,
+			);
+			path = DisplayUnit;
+			sourceTree = "<group>";
+		};
+		1784240027548138006246D0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1784240127548138006246D0 /* CJMDisplayUnit.m */,
+				1784240227548138006246D0 /* CJMDisplayUnitContent.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		1784240327548138006246D0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1784240427548138006246D0 /* CJMDisplayUnitController.h */,
+				1784240527548138006246D0 /* CJMDisplayUnitController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		1784240A275482BD006246D0 /* ABTesting */ = {
+			isa = PBXGroup;
+			children = (
+				1784240B275482BD006246D0 /* uieditor */,
+				1784244F275482BE006246D0 /* utils */,
+				17842452275482BE006246D0 /* models */,
+				17842459275482BE006246D0 /* controllers */,
+			);
+			path = ABTesting;
+			sourceTree = "<group>";
+		};
+		1784240B275482BD006246D0 /* uieditor */ = {
+			isa = PBXGroup;
+			children = (
+				1784240C275482BD006246D0 /* websocket */,
+				1784240F275482BD006246D0 /* messages */,
+				17842420275482BD006246D0 /* CJMSwizzler.h */,
+				17842421275482BD006246D0 /* CJMEditorSession.h */,
+				17842422275482BD006246D0 /* NSInvocation+CJMHelper.m */,
+				17842423275482BD006246D0 /* CJMEditorImageCache.h */,
+				17842424275482BD006246D0 /* serializers */,
+				1784243B275482BE006246D0 /* transformers */,
+				1784244B275482BE006246D0 /* CJMEditorSession.m */,
+				1784244C275482BE006246D0 /* CJMSwizzler.m */,
+				1784244D275482BE006246D0 /* NSInvocation+CJMHelper.h */,
+				1784244E275482BE006246D0 /* CJMEditorImageCache.m */,
+			);
+			path = uieditor;
+			sourceTree = "<group>";
+		};
+		1784240C275482BD006246D0 /* websocket */ = {
+			isa = PBXGroup;
+			children = (
+				1784240D275482BD006246D0 /* CJMWebSocket.h */,
+				1784240E275482BD006246D0 /* CJMWebSocket.m */,
+			);
+			path = websocket;
+			sourceTree = "<group>";
+		};
+		1784240F275482BD006246D0 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				17842410275482BD006246D0 /* CJMABTestEditorSnapshotMessageResponse.h */,
+				17842411275482BD006246D0 /* CJMABTestEditorHandshakeMessage.h */,
+				17842412275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.m */,
+				17842413275482BD006246D0 /* CJMABTestEditorVarsMessageResponse.m */,
+				17842414275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.h */,
+				17842415275482BD006246D0 /* CJMABTestEditorVarsMessageRequest.h */,
+				17842416275482BD006246D0 /* CJMABTestEditorSnapshotMessageRequest.h */,
+				17842417275482BD006246D0 /* CJMABTestEditorMessage.m */,
+				17842418275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.h */,
+				17842419275482BD006246D0 /* CJMABTestEditorHandshakeMessage.m */,
+				1784241A275482BD006246D0 /* CJMABTestEditorSnapshotMessageResponse.m */,
+				1784241B275482BD006246D0 /* CJMABTestEditorVarsMessageResponse.h */,
+				1784241C275482BD006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.m */,
+				1784241D275482BD006246D0 /* CJMABTestEditorVarsMessageRequest.m */,
+				1784241E275482BD006246D0 /* CJMABTestEditorMessage.h */,
+				1784241F275482BD006246D0 /* CJMABTestEditorSnapshotMessageRequest.m */,
+			);
+			path = messages;
+			sourceTree = "<group>";
+		};
+		17842424275482BD006246D0 /* serializers */ = {
+			isa = PBXGroup;
+			children = (
+				17842425275482BE006246D0 /* CJMObjectSelector.m */,
+				17842426275482BE006246D0 /* CJMClassDescription.h */,
+				17842427275482BE006246D0 /* CJMObjectSequenceGenerator.m */,
+				17842428275482BE006246D0 /* CJMObjectIdentityProvider.h */,
+				17842429275482BE006246D0 /* CJMEnumDescription.h */,
+				1784242A275482BE006246D0 /* CJMPropertyDescription.h */,
+				1784242B275482BE006246D0 /* CJMApplicationStateSerializer.h */,
+				1784242C275482BE006246D0 /* CJMObjectSerializerContext.m */,
+				1784242D275482BE006246D0 /* CJMObjectSerializerConfig.h */,
+				1784242E275482BE006246D0 /* CJMObjectSerializer.h */,
+				1784242F275482BE006246D0 /* CJMTypeDescription.h */,
+				17842430275482BE006246D0 /* CJMObjectIdentityProvider.m */,
+				17842431275482BE006246D0 /* CJMObjectSequenceGenerator.h */,
+				17842432275482BE006246D0 /* CJMObjectSelector.h */,
+				17842433275482BE006246D0 /* CJMClassDescription.m */,
+				17842434275482BE006246D0 /* CJMPropertyDescription.m */,
+				17842435275482BE006246D0 /* CJMEnumDescription.m */,
+				17842436275482BE006246D0 /* CJMObjectSerializerConfig.m */,
+				17842437275482BE006246D0 /* CJMObjectSerializerContext.h */,
+				17842438275482BE006246D0 /* CJMApplicationStateSerializer.m */,
+				17842439275482BE006246D0 /* CJMTypeDescription.m */,
+				1784243A275482BE006246D0 /* CJMObjectSerializer.m */,
+			);
+			path = serializers;
+			sourceTree = "<group>";
+		};
+		1784243B275482BE006246D0 /* transformers */ = {
+			isa = PBXGroup;
+			children = (
+				1784243C275482BE006246D0 /* CJMNSDictionaryFromUIFontValueTransformer.m */,
+				1784243D275482BE006246D0 /* CJMNSStringFromUIColorValueTransformer.m */,
+				1784243E275482BE006246D0 /* CJMValueTransformers.h */,
+				1784243F275482BE006246D0 /* CJMNSDictionaryFromUIImageValueTransformer.m */,
+				17842440275482BE006246D0 /* CJMNSDictionaryFromCGSizeValueTransformer.m */,
+				17842441275482BE006246D0 /* CJMPassThroughValueTransformer.m */,
+				17842442275482BE006246D0 /* CJMNSDictionaryFromNSAttributedStringValueTransformer.m */,
+				17842443275482BE006246D0 /* CJMNSStringFromCGColorRefValueTransformer.m */,
+				17842444275482BE006246D0 /* CJMCGFloatFromNSNumberValueTransformer.m */,
+				17842445275482BE006246D0 /* CJMNSDictionaryFromCATransform3DValueTransformer.m */,
+				17842446275482BE006246D0 /* CJMSDictionaryFromCGAffineTransformValueTransformer.m */,
+				17842447275482BE006246D0 /* CJMNSDictionaryFromUIEdgeInsetsValueTransformer.m */,
+				17842448275482BE006246D0 /* CJMNSNumberFromBOOLValueTransformer.m */,
+				17842449275482BE006246D0 /* CJMNSDictionaryFromCGRectValueTransformer.m */,
+				1784244A275482BE006246D0 /* CJMNSDictionaryFromCGPointValueTransformer.m */,
+			);
+			path = transformers;
+			sourceTree = "<group>";
+		};
+		1784244F275482BE006246D0 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				17842450275482BE006246D0 /* CJMABTestUtils.h */,
+				17842451275482BE006246D0 /* CJMABTestUtils.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		17842452275482BE006246D0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				17842453275482BE006246D0 /* CJMABVariant.h */,
+				17842454275482BE006246D0 /* CJMVar.h */,
+				17842455275482BE006246D0 /* CJMVarCache.h */,
+				17842456275482BE006246D0 /* CJMVar.m */,
+				17842457275482BE006246D0 /* CJMABVariant.m */,
+				17842458275482BE006246D0 /* CJMVarCache.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		17842459275482BE006246D0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1784245A275482BE006246D0 /* CJMABTestController.h */,
+				1784245B275482BE006246D0 /* CJMABTestController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		178424A527549067006246D0 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				178424A627549067006246D0 /* cells */,
+				178424B927549068006246D0 /* config */,
+				178424BB27549068006246D0 /* images */,
+				178424C427549068006246D0 /* models */,
+				178424D327549068006246D0 /* controllers */,
+				178424D927549068006246D0 /* views */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		178424A627549067006246D0 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				178424A727549067006246D0 /* CJMInboxSimpleMessageCell~land.xib */,
+				178424A827549067006246D0 /* CJMCarouselMessageCell.m */,
+				178424A927549067006246D0 /* CJMInboxIconMessageCell.h */,
+				178424AA27549067006246D0 /* CJMInboxSimpleMessageCell~port.xib */,
+				178424AB27549068006246D0 /* CJMInboxIconMessageCell~land.xib */,
+				178424AC27549068006246D0 /* CJMCarouselImageMessageCell.h */,
+				178424AD27549068006246D0 /* CJMInboxIconMessageCell~port.xib */,
+				178424AE27549068006246D0 /* CJMInboxSimpleMessageCell.m */,
+				178424AF27549068006246D0 /* CJMInboxBaseMessageCell.m */,
+				178424B027549068006246D0 /* CJMInboxIconMessageCell.m */,
+				178424B127549068006246D0 /* CJMCarouselMessageCell.h */,
+				178424B227549068006246D0 /* CJMCarouselImageMessageCell.m */,
+				178424B327549068006246D0 /* CJMCarouselImageMessageCell~land.xib */,
+				178424B427549068006246D0 /* CJMInboxSimpleMessageCell.h */,
+				178424B527549068006246D0 /* CJMCarouselImageMessageCell~port.xib */,
+				178424B627549068006246D0 /* CJMInboxBaseMessageCell.h */,
+				178424B727549068006246D0 /* CJMCarouselMessageCell~land.xib */,
+				178424B827549068006246D0 /* CJMCarouselMessageCell~port.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		178424B927549068006246D0 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				178424BA27549068006246D0 /* CJMInboxStyleConfig.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		178424BB27549068006246D0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				178424BC27549068006246D0 /* CJMVideoThumbnailGenerator.m */,
+				178424BD27549068006246D0 /* volume_off.png */,
+				178424BE27549068006246D0 /* volume_on.png */,
+				178424BF27549068006246D0 /* placeholder.png */,
+				178424C027549068006246D0 /* CJMVideoThumbnailGenerator.h */,
+				178424C127549068006246D0 /* ct_default_portrait_image.png */,
+				178424C227549068006246D0 /* ct_default_landscape_image.png */,
+				178424C327549068006246D0 /* ct_default_video.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		178424C427549068006246D0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				178424C527549068006246D0 /* CJMInboxUtils.h */,
+				178424C627549068006246D0 /* CJMUserMO+CoreDataProperties.m */,
+				178424C727549068006246D0 /* CJMMessageMO+CoreDataProperties.h */,
+				178424C827549068006246D0 /* CJMMessageMO.h */,
+				178424C927549068006246D0 /* CJMUserMO.h */,
+				178424CA27549068006246D0 /* CJMInboxMessageContent.m */,
+				178424CB27549068006246D0 /* CJMMessageMO+CoreDataProperties.m */,
+				178424CC27549068006246D0 /* CJMUserMO+CoreDataProperties.h */,
+				178424CD27549068006246D0 /* CJMInboxUtils.m */,
+				178424CE27549068006246D0 /* CJMInboxMessage.m */,
+				178424CF27549068006246D0 /* CJMMessageMO.m */,
+				178424D027549068006246D0 /* Inbox.xcdatamodeld */,
+				178424D227549068006246D0 /* CJMUserMO.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		178424D327549068006246D0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				178424D427549068006246D0 /* CJMInboxController.m */,
+				178424D527549068006246D0 /* CJMInboxViewControllerPrivate.h */,
+				178424D627549068006246D0 /* CJMInboxViewController.m */,
+				178424D727549068006246D0 /* CJMInboxViewController.xib */,
+				178424D827549068006246D0 /* CJMInboxController.h */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		178424D927549068006246D0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				178424DA27549068006246D0 /* CJMInboxMessageActionView.h */,
+				178424DB27549068006246D0 /* UIView+CJMToast.m */,
+				178424DC27549068006246D0 /* CJMCarouselImageView.m */,
+				178424DD27549068006246D0 /* CJMCarouselImageView.xib */,
+				178424DE27549068006246D0 /* CJMSwipeView.m */,
+				178424DF27549068006246D0 /* CJMCarouselImageView.h */,
+				178424E027549068006246D0 /* UIView+CJMToast.h */,
+				178424E127549068006246D0 /* CJMInboxMessageActionView.m */,
+				178424E227549068006246D0 /* CJMSwipeView.h */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		178425192754B5B6006246D0 /* InApps */ = {
+			isa = PBXGroup;
+			children = (
+				1784251A2754B5B6006246D0 /* CJMFooterViewController.h */,
+				1784251B2754B5B6006246D0 /* CJMHalfInterstitialViewController~iphoneland.xib */,
+				1784251C2754B5B6006246D0 /* CJMDismissButton.m */,
+				1784251D2754B5B6006246D0 /* CJMHeaderViewController.m */,
+				1784251E2754B5B6006246D0 /* CJMHalfInterstitialViewController~ipad.xib */,
+				1784251F2754B5B6006246D0 /* CJMHalfInterstitialViewController~iphoneport.xib */,
+				178425202754B5B6006246D0 /* CJMHalfInterstitialViewController.m */,
+				178425212754B5B6006246D0 /* CJMBaseHeaderFooterViewControllerPrivate.h */,
+				178425222754B5B6006246D0 /* CJMInterstitialViewController~ipad.xib */,
+				178425232754B5B6006246D0 /* CJMInterstitialImageViewController.m */,
+				178425242754B5B6006246D0 /* CJMAVPlayerViewController.h */,
+				178425252754B5B6006246D0 /* CJMHeaderViewController~ipadland.xib */,
+				178425262754B5B6006246D0 /* CJMBaseHeaderFooterViewController.m */,
+				178425272754B5B6006246D0 /* CJMCoverImageViewController~iphoneport.xib */,
+				178425282754B5B6006246D0 /* CJMHalfInterstitialViewController~ipadland.xib */,
+				178425292754B5B6006246D0 /* CJMCoverViewController.h */,
+				1784252A2754B5B6006246D0 /* CJMCoverImageViewController~ipadland.xib */,
+				1784252B2754B5B6006246D0 /* CJMHalfInterstitialImageViewController.m */,
+				1784252C2754B5B6006246D0 /* CJMImageInAppViewControllerPrivate.h */,
+				1784252D2754B5B6006246D0 /* CJMCoverImageViewController~iphoneland.xib */,
+				1784252E2754B5B6006246D0 /* images */,
+				1784253D2754B5B6006246D0 /* CJMFooterViewController~ipad.xib */,
+				1784253E2754B5B6006246D0 /* CJMInterstitialImageViewController~iphoneland.xib */,
+				1784253F2754B5B6006246D0 /* CJMCoverImageViewController.m */,
+				178425402754B5B6006246D0 /* CJMInterstitialImageViewController~iphoneport.xib */,
+				178425412754B5B6006246D0 /* CJMInterstitialImageViewController~ipadland.xib */,
+				178425422754B5B6006246D0 /* CJMAlertViewController.h */,
+				178425432754B5B6006246D0 /* CJMInterstitialViewController~ipadland.xib */,
+				178425442754B5B6006246D0 /* CJMImageInAppViewController.h */,
+				178425452754B5B6006246D0 /* CJMInterstitialViewController.m */,
+				178425462754B5B6006246D0 /* CJMCoverViewController~iphoneport.xib */,
+				178425472754B5B6006246D0 /* CJMHeaderViewController~iphoneland.xib */,
+				178425482754B5B6006246D0 /* CJMCoverViewController~ipad.xib */,
+				178425492754B5B6006246D0 /* CJMInAppHTMLViewController.m */,
+				1784254A2754B5B6006246D0 /* CJMHeaderViewController~iphoneport.xib */,
+				1784254B2754B5B6006246D0 /* CJMCoverViewController~iphoneland.xib */,
+				1784254C2754B5B6006246D0 /* CJMInterstitialImageViewController.h */,
+				1784254D2754B5B6006246D0 /* CJMAVPlayerViewController.m */,
+				1784254E2754B5B6006246D0 /* CJMHalfInterstitialViewController.h */,
+				1784254F2754B5B6006246D0 /* CJMDismissButton.h */,
+				178425502754B5B6006246D0 /* CJMHeaderViewController.h */,
+				178425512754B5B6006246D0 /* CJMHeaderViewController~ipad.xib */,
+				178425522754B5B6006246D0 /* CJMFooterViewController.m */,
+				178425532754B5B6006246D0 /* CJMHalfInterstitialImageViewController.h */,
+				178425542754B5B6006246D0 /* CJMInterstitialViewController~iphoneport.xib */,
+				178425552754B5B6006246D0 /* CJMFooterViewController~iphoneland.xib */,
+				178425562754B5B6006246D0 /* CJMCoverViewController.m */,
+				178425572754B5B6006246D0 /* CJMFooterViewController~iphoneport.xib */,
+				178425582754B5B6006246D0 /* CJMInterstitialViewController~iphoneland.xib */,
+				178425592754B5B6006246D0 /* CJMBaseHeaderFooterViewController.h */,
+				1784255A2754B5B6006246D0 /* CJMAlertViewController.m */,
+				1784255B2754B5B6006246D0 /* CJMImageInAppViewController.m */,
+				1784255C2754B5B6006246D0 /* CJMHalfInterstitialImageViewController~iphoneland.xib */,
+				1784255D2754B5B6006246D0 /* CJMHalfInterstitialImageViewController~ipad.xib */,
+				1784255E2754B5B6006246D0 /* CJMCoverImageViewController.h */,
+				1784255F2754B5B6006246D0 /* CJMInterstitialImageViewController~ipad.xib */,
+				178425602754B5B6006246D0 /* CJMHalfInterstitialImageViewController~ipadland.xib */,
+				178425612754B5B6006246D0 /* CJMHalfInterstitialImageViewController~iphoneport.xib */,
+				178425622754B5B6006246D0 /* CJMCoverViewController~ipadland.xib */,
+				178425632754B5B6006246D0 /* CJMInAppHTMLViewController.h */,
+				178425642754B5B6006246D0 /* CJMCoverImageViewController~ipad.xib */,
+				178425652754B5B6006246D0 /* CJMFooterViewController~ipadland.xib */,
+				178425662754B5B6006246D0 /* CJMInterstitialViewController.h */,
+			);
+			path = InApps;
+			sourceTree = "<group>";
+		};
+		1784252E2754B5B6006246D0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1784252F2754B5B6006246D0 /* ic_shrink@2x.png */,
+				178425302754B5B6006246D0 /* ic_play@1x.png */,
+				178425312754B5B6006246D0 /* ic_shrink@3x.png */,
+				178425322754B5B6006246D0 /* ic_thumb.png */,
+				178425332754B5B6006246D0 /* sound-wave-headphones.png */,
+				178425342754B5B6006246D0 /* ic_expand@3x.png */,
+				178425352754B5B6006246D0 /* ic_expand@2x.png */,
+				178425362754B5B6006246D0 /* ic_pause@1x.png */,
+				178425372754B5B6006246D0 /* ic_pause@2x.png */,
+				178425382754B5B6006246D0 /* ic_expand@1x.png */,
+				178425392754B5B6006246D0 /* ic_pause@3x.png */,
+				1784253A2754B5B6006246D0 /* ic_play@3x.png */,
+				1784253B2754B5B6006246D0 /* ic_play@2x.png */,
+				1784253C2754B5B6006246D0 /* ic_shrink@1x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		178426432754DC24006246D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				178426442754DC24006246D0 /* SDWebImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		178423B327547873006246D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1784261B2754BA9B006246D0 /* CJMNotificationButton.h in Headers */,
+				178426252754BA9B006246D0 /* CJMJSInterface.h in Headers */,
+				178426302754BA9B006246D0 /* CJMInAppDisplayViewController.h in Headers */,
+				178423FE27547A19006246D0 /* CJMFeatureFlagsController.h in Headers */,
+				1784250127549068006246D0 /* CJMMessageMO.h in Headers */,
+				178426112754BA9B006246D0 /* CJMUriHelper.h in Headers */,
+				178426222754BA9B006246D0 /* CJMInstanceConfigPrivate.h in Headers */,
+				1784240827548138006246D0 /* CJMDisplayUnitController.h in Headers */,
+				1784256E2754B5B7006246D0 /* CJMBaseHeaderFooterViewControllerPrivate.h in Headers */,
+				1784247B275482BE006246D0 /* CJMObjectSerializer.h in Headers */,
+				1784250027549068006246D0 /* CJMMessageMO+CoreDataProperties.h in Headers */,
+				1784245F275482BE006246D0 /* CJMABTestEditorHandshakeMessage.h in Headers */,
+				178425FE2754BA9B006246D0 /* CJMValidationResult.h in Headers */,
+				178426422754BA9B006246D0 /* CJMUTMDetail.h in Headers */,
+				178425FD2754BA9B006246D0 /* CJMLogger.h in Headers */,
+				1784260B2754BA9B006246D0 /* CJM+FeatureFlags.h in Headers */,
+				1784251527549068006246D0 /* CJMCarouselImageView.h in Headers */,
+				1784249D275482BE006246D0 /* CJMABVariant.h in Headers */,
+				1784246F275482BE006246D0 /* CJMEditorSession.h in Headers */,
+				1784261E2754BA9B006246D0 /* CJMPushNotificationDelegate.h in Headers */,
+				1784259C2754B5B7006246D0 /* CJMHeaderViewController.h in Headers */,
+				1784259B2754B5B7006246D0 /* CJMDismissButton.h in Headers */,
+				178423E1275478F1006246D0 /* CJMNSData+Base64.h in Headers */,
+				17842464275482BE006246D0 /* CJMABTestEditorSnapshotMessageRequest.h in Headers */,
+				178424A3275482BE006246D0 /* CJMABTestController.h in Headers */,
+				1784263C2754BA9B006246D0 /* CJMConstants.h in Headers */,
+				178426162754BA9B006246D0 /* CJMInAppFCManager.h in Headers */,
+				17842469275482BE006246D0 /* CJMABTestEditorVarsMessageResponse.h in Headers */,
+				178426092754BA9B006246D0 /* CJM+DisplayUnit.h in Headers */,
+				17842476275482BE006246D0 /* CJMEnumDescription.h in Headers */,
+				1784261A2754BA9B006246D0 /* CJMEventDetail.h in Headers */,
+				1784259A2754B5B7006246D0 /* CJMHalfInterstitialViewController.h in Headers */,
+				178423DD275478F1006246D0 /* CJMNSData+CommonCrypto.h in Headers */,
+				178424FA27549068006246D0 /* CJMVideoThumbnailGenerator.h in Headers */,
+				1784249B275482BE006246D0 /* CJMABTestUtils.h in Headers */,
+				178423F12754790B006246D0 /* CJMProductConfigPrivate.h in Headers */,
+				1784251627549068006246D0 /* UIView+CJMToast.h in Headers */,
+				178426212754BA9B006246D0 /* CJMProfileBuilder.h in Headers */,
+				178426392754BA9B006246D0 /* CJMInAppNotificationDelegate.h in Headers */,
+				178426312754BA9B006246D0 /* CJM.h in Headers */,
+				1784245C275482BE006246D0 /* CJMWebSocket.h in Headers */,
+				17842471275482BE006246D0 /* CJMEditorImageCache.h in Headers */,
+				178423F32754790B006246D0 /* CJMProductConfigController.h in Headers */,
+				178425AA2754B5B7006246D0 /* CJMCoverImageViewController.h in Headers */,
+				1784262B2754BA9B006246D0 /* CJMBuildInfo.h in Headers */,
+				1784250F27549068006246D0 /* CJMInboxController.h in Headers */,
+				178425982754B5B7006246D0 /* CJMInterstitialImageViewController.h in Headers */,
+				178424F027549068006246D0 /* CJMInboxSimpleMessageCell.h in Headers */,
+				178425FB2754BA9B006246D0 /* CJMLocationManager.h in Headers */,
+				178426242754BA9B006246D0 /* CJM+SSLPinning.h in Headers */,
+				178426262754BA9B006246D0 /* CJMInAppUtils.h in Headers */,
+				17842466275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.h in Headers */,
+				178423DC275478F1006246D0 /* CJMAESCrypt.h in Headers */,
+				178425712754B5B7006246D0 /* CJMAVPlayerViewController.h in Headers */,
+				1784260C2754BA9B006246D0 /* CJMPreferences.h in Headers */,
+				178423FB27547A19006246D0 /* CJMFeatureFlagsPrivate.h in Headers */,
+				1784250C27549068006246D0 /* CJMInboxViewControllerPrivate.h in Headers */,
+				1784247F275482BE006246D0 /* CJMObjectSelector.h in Headers */,
+				178425902754B5B7006246D0 /* CJMImageInAppViewController.h in Headers */,
+				1784251027549068006246D0 /* CJMInboxMessageActionView.h in Headers */,
+				1784248A275482BE006246D0 /* CJMValueTransformers.h in Headers */,
+				17842462275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.h in Headers */,
+				1784262A2754BA9B006246D0 /* CJM+Inbox.h in Headers */,
+				1784259F2754B5B7006246D0 /* CJMHalfInterstitialImageViewController.h in Headers */,
+				178426272754BA9B006246D0 /* CJMDeviceInfo.h in Headers */,
+				178426072754BA9B006246D0 /* CJMPinnedNSURLSessionDelegate.h in Headers */,
+				17842477275482BE006246D0 /* CJMPropertyDescription.h in Headers */,
+				178423DB275478F1006246D0 /* CJMNSString+Base64.h in Headers */,
+				1784246C275482BE006246D0 /* CJMABTestEditorMessage.h in Headers */,
+				178426042754BA9B006246D0 /* CJM+ABTesting.h in Headers */,
+				178425AF2754B5B7006246D0 /* CJMInAppHTMLViewController.h in Headers */,
+				178426062754BA9B006246D0 /* CJM+ProductConfig.h in Headers */,
+				178425672754B5B7006246D0 /* CJMFooterViewController.h in Headers */,
+				17842473275482BE006246D0 /* CJMClassDescription.h in Headers */,
+				1784263D2754BA9B006246D0 /* CJMInAppDisplayViewControllerPrivate.h in Headers */,
+				1784249E275482BE006246D0 /* CJMVar.h in Headers */,
+				1784245E275482BE006246D0 /* CJMABTestEditorSnapshotMessageResponse.h in Headers */,
+				178426232754BA9B006246D0 /* CJMPlistInfo.h in Headers */,
+				178425B22754B5B7006246D0 /* CJMInterstitialViewController.h in Headers */,
+				178426292754BA9B006246D0 /* CJMSyncDelegate.h in Headers */,
+				178426402754BA9B006246D0 /* CJMValidator.h in Headers */,
+				178426202754BA9B006246D0 /* CJMLocalDataStore.h in Headers */,
+				1784260F2754BA9B006246D0 /* CJMInAppNotification.h in Headers */,
+				1784261D2754BA9B006246D0 /* CJMCertificatePinning.h in Headers */,
+				178424F227549068006246D0 /* CJMInboxBaseMessageCell.h in Headers */,
+				178423E5275478FA006246D0 /* CJMManager.h in Headers */,
+				1784250527549068006246D0 /* CJMUserMO+CoreDataProperties.h in Headers */,
+				1784249F275482BE006246D0 /* CJMVarCache.h in Headers */,
+				1784247A275482BE006246D0 /* CJMObjectSerializerConfig.h in Headers */,
+				1784261C2754BA9B006246D0 /* CJMUtils.h in Headers */,
+				1784247C275482BE006246D0 /* CJMTypeDescription.h in Headers */,
+				178426282754BA9B006246D0 /* CJMEventBuilder.h in Headers */,
+				17842484275482BE006246D0 /* CJMObjectSerializerContext.h in Headers */,
+				178426132754BA9B006246D0 /* CJMSwizzle.h in Headers */,
+				17842499275482BE006246D0 /* NSInvocation+CJMHelper.h in Headers */,
+				17842475275482BE006246D0 /* CJMObjectIdentityProvider.h in Headers */,
+				178424E527549068006246D0 /* CJMInboxIconMessageCell.h in Headers */,
+				1784250227549068006246D0 /* CJMUserMO.h in Headers */,
+				178425792754B5B7006246D0 /* CJMImageInAppViewControllerPrivate.h in Headers */,
+				178424E827549068006246D0 /* CJMCarouselImageMessageCell.h in Headers */,
+				1784251827549068006246D0 /* CJMSwipeView.h in Headers */,
+				17842463275482BE006246D0 /* CJMABTestEditorVarsMessageRequest.h in Headers */,
+				178425A52754B5B7006246D0 /* CJMBaseHeaderFooterViewController.h in Headers */,
+				17842478275482BE006246D0 /* CJMApplicationStateSerializer.h in Headers */,
+				178424FE27549068006246D0 /* CJMInboxUtils.h in Headers */,
+				1784258E2754B5B7006246D0 /* CJMAlertViewController.h in Headers */,
+				178426332754BA9B006246D0 /* CJMTrackedViewController.h in Headers */,
+				178425762754B5B7006246D0 /* CJMCoverViewController.h in Headers */,
+				1784246E275482BE006246D0 /* CJMSwizzler.h in Headers */,
+				1784247E275482BE006246D0 /* CJMObjectSequenceGenerator.h in Headers */,
+				178426082754BA9B006246D0 /* CJMInstanceConfig.h in Headers */,
+				1784263F2754BA9B006246D0 /* CJMInAppResources.h in Headers */,
+				178424ED27549068006246D0 /* CJMCarouselMessageCell.h in Headers */,
+				178426372754BA9B006246D0 /* CJMKnownProfileFields.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		178423B727547873006246D0 /* CJMVNPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178423CC27547873006246D0 /* Build configuration list for PBXNativeTarget "CJMVNPT" */;
+			buildPhases = (
+				178423B327547873006246D0 /* Headers */,
+				178423B427547873006246D0 /* Sources */,
+				178423B527547873006246D0 /* Frameworks */,
+				178423B627547873006246D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJMVNPT;
+			productName = CJMVNPT;
+			productReference = 178423B827547873006246D0 /* CJMVNPT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		178423AF27547873006246D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					178423B727547873006246D0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 178423B227547873006246D0 /* Build configuration list for PBXProject "CJMVNPT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 178423AE27547873006246D0;
+			productRefGroup = 178423B927547873006246D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				178423B727547873006246D0 /* CJMVNPT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		178423B627547873006246D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178425B02754B5B7006246D0 /* CJMCoverImageViewController~ipad.xib in Resources */,
+				178424F327549068006246D0 /* CJMCarouselMessageCell~land.xib in Resources */,
+				178425682754B5B7006246D0 /* CJMHalfInterstitialViewController~iphoneland.xib in Resources */,
+				178424FC27549068006246D0 /* ct_default_landscape_image.png in Resources */,
+				178425772754B5B7006246D0 /* CJMCoverImageViewController~ipadland.xib in Resources */,
+				1784258C2754B5B7006246D0 /* CJMInterstitialImageViewController~iphoneport.xib in Resources */,
+				178425932754B5B7006246D0 /* CJMHeaderViewController~iphoneland.xib in Resources */,
+				178425882754B5B7006246D0 /* ic_shrink@1x.png in Resources */,
+				178425862754B5B7006246D0 /* ic_play@3x.png in Resources */,
+				178424E927549068006246D0 /* CJMInboxIconMessageCell~port.xib in Resources */,
+				1784257E2754B5B7006246D0 /* ic_thumb.png in Resources */,
+				178424F727549068006246D0 /* volume_off.png in Resources */,
+				178425AD2754B5B7006246D0 /* CJMHalfInterstitialImageViewController~iphoneport.xib in Resources */,
+				178425962754B5B7006246D0 /* CJMHeaderViewController~iphoneport.xib in Resources */,
+				178425872754B5B7006246D0 /* ic_play@2x.png in Resources */,
+				1784257F2754B5B7006246D0 /* sound-wave-headphones.png in Resources */,
+				178424E327549068006246D0 /* CJMInboxSimpleMessageCell~land.xib in Resources */,
+				178424E627549068006246D0 /* CJMInboxSimpleMessageCell~port.xib in Resources */,
+				178425A02754B5B7006246D0 /* CJMInterstitialViewController~iphoneport.xib in Resources */,
+				178426352754BA9B006246D0 /* DigiCertGlobalRootCA.crt in Resources */,
+				178425852754B5B7006246D0 /* ic_pause@3x.png in Resources */,
+				178425AB2754B5B7006246D0 /* CJMInterstitialImageViewController~ipad.xib in Resources */,
+				1784257D2754B5B7006246D0 /* ic_shrink@3x.png in Resources */,
+				178425802754B5B7006246D0 /* ic_expand@3x.png in Resources */,
+				178425722754B5B7006246D0 /* CJMHeaderViewController~ipadland.xib in Resources */,
+				178425832754B5B7006246D0 /* ic_pause@2x.png in Resources */,
+				178425972754B5B7006246D0 /* CJMCoverViewController~iphoneland.xib in Resources */,
+				178425822754B5B7006246D0 /* ic_pause@1x.png in Resources */,
+				1784250E27549068006246D0 /* CJMInboxViewController.xib in Resources */,
+				178425942754B5B7006246D0 /* CJMCoverViewController~ipad.xib in Resources */,
+				1784256F2754B5B7006246D0 /* CJMInterstitialViewController~ipad.xib in Resources */,
+				1784257B2754B5B7006246D0 /* ic_shrink@2x.png in Resources */,
+				178425922754B5B7006246D0 /* CJMCoverViewController~iphoneport.xib in Resources */,
+				1784257C2754B5B7006246D0 /* ic_play@1x.png in Resources */,
+				178424F427549068006246D0 /* CJMCarouselMessageCell~port.xib in Resources */,
+				1784258A2754B5B7006246D0 /* CJMInterstitialImageViewController~iphoneland.xib in Resources */,
+				178425A42754B5B7006246D0 /* CJMInterstitialViewController~iphoneland.xib in Resources */,
+				178424E727549068006246D0 /* CJMInboxIconMessageCell~land.xib in Resources */,
+				1784258F2754B5B7006246D0 /* CJMInterstitialViewController~ipadland.xib in Resources */,
+				178425B12754B5B7006246D0 /* CJMFooterViewController~ipadland.xib in Resources */,
+				178425892754B5B7006246D0 /* CJMFooterViewController~ipad.xib in Resources */,
+				178424F127549068006246D0 /* CJMCarouselImageMessageCell~port.xib in Resources */,
+				178425AE2754B5B7006246D0 /* CJMCoverViewController~ipadland.xib in Resources */,
+				178425A32754B5B7006246D0 /* CJMFooterViewController~iphoneport.xib in Resources */,
+				1784259D2754B5B7006246D0 /* CJMHeaderViewController~ipad.xib in Resources */,
+				178425AC2754B5B7006246D0 /* CJMHalfInterstitialImageViewController~ipadland.xib in Resources */,
+				178424F827549068006246D0 /* volume_on.png in Resources */,
+				178425742754B5B7006246D0 /* CJMCoverImageViewController~iphoneport.xib in Resources */,
+				1784256C2754B5B7006246D0 /* CJMHalfInterstitialViewController~iphoneport.xib in Resources */,
+				1784262F2754BA9B006246D0 /* DigiCertSHA2SecureServerCA.crt in Resources */,
+				178425A82754B5B7006246D0 /* CJMHalfInterstitialImageViewController~iphoneland.xib in Resources */,
+				178425A92754B5B7006246D0 /* CJMHalfInterstitialImageViewController~ipad.xib in Resources */,
+				1784257A2754B5B7006246D0 /* CJMCoverImageViewController~iphoneland.xib in Resources */,
+				178425812754B5B7006246D0 /* ic_expand@2x.png in Resources */,
+				1784251327549068006246D0 /* CJMCarouselImageView.xib in Resources */,
+				178424FB27549068006246D0 /* ct_default_portrait_image.png in Resources */,
+				178425752754B5B7006246D0 /* CJMHalfInterstitialViewController~ipadland.xib in Resources */,
+				178425842754B5B7006246D0 /* ic_expand@1x.png in Resources */,
+				178424F927549068006246D0 /* placeholder.png in Resources */,
+				178425A12754B5B7006246D0 /* CJMFooterViewController~iphoneland.xib in Resources */,
+				1784256B2754B5B7006246D0 /* CJMHalfInterstitialViewController~ipad.xib in Resources */,
+				178424FD27549068006246D0 /* ct_default_video.png in Resources */,
+				1784258D2754B5B7006246D0 /* CJMInterstitialImageViewController~ipadland.xib in Resources */,
+				178424EF27549068006246D0 /* CJMCarouselImageMessageCell~land.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		178423B427547873006246D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1784240927548138006246D0 /* CJMDisplayUnitController.m in Sources */,
+				178423F22754790B006246D0 /* CJMProductConfigController.m in Sources */,
+				17842467275482BE006246D0 /* CJMABTestEditorHandshakeMessage.m in Sources */,
+				178426152754BA9B006246D0 /* CJMConstants.m in Sources */,
+				1784248B275482BE006246D0 /* CJMNSDictionaryFromUIImageValueTransformer.m in Sources */,
+				178426412754BA9B006246D0 /* CJMInAppDisplayViewController.m in Sources */,
+				178424A0275482BE006246D0 /* CJMVar.m in Sources */,
+				178424A2275482BE006246D0 /* CJMVarCache.m in Sources */,
+				17842481275482BE006246D0 /* CJMPropertyDescription.m in Sources */,
+				1784249A275482BE006246D0 /* CJMEditorImageCache.m in Sources */,
+				17842492275482BE006246D0 /* CJMSDictionaryFromCGAffineTransformValueTransformer.m in Sources */,
+				178426322754BA9B006246D0 /* CJMTrackedViewController.m in Sources */,
+				1784245D275482BE006246D0 /* CJMWebSocket.m in Sources */,
+				178425A22754B5B7006246D0 /* CJMCoverViewController.m in Sources */,
+				1784246D275482BE006246D0 /* CJMABTestEditorSnapshotMessageRequest.m in Sources */,
+				1784251727549068006246D0 /* CJMInboxMessageActionView.m in Sources */,
+				178424F627549068006246D0 /* CJMVideoThumbnailGenerator.m in Sources */,
+				1784250427549068006246D0 /* CJMMessageMO+CoreDataProperties.m in Sources */,
+				178423E0275478F1006246D0 /* CJMAESCrypt.m in Sources */,
+				1784246A275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageResponse.m in Sources */,
+				17842494275482BE006246D0 /* CJMNSNumberFromBOOLValueTransformer.m in Sources */,
+				17842486275482BE006246D0 /* CJMTypeDescription.m in Sources */,
+				1784250B27549068006246D0 /* CJMInboxController.m in Sources */,
+				178423E2275478F1006246D0 /* CJMNSData+CommonCrypto.m in Sources */,
+				1784250327549068006246D0 /* CJMInboxMessageContent.m in Sources */,
+				178424EE27549068006246D0 /* CJMCarouselImageMessageCell.m in Sources */,
+				1784248E275482BE006246D0 /* CJMNSDictionaryFromNSAttributedStringValueTransformer.m in Sources */,
+				178425992754B5B7006246D0 /* CJMAVPlayerViewController.m in Sources */,
+				178424E427549068006246D0 /* CJMCarouselMessageCell.m in Sources */,
+				178426342754BA9B006246D0 /* CJMUTMDetail.m in Sources */,
+				1784250627549068006246D0 /* CJMInboxUtils.m in Sources */,
+				1784240727548138006246D0 /* CJMDisplayUnitContent.m in Sources */,
+				1784248F275482BE006246D0 /* CJMNSStringFromCGColorRefValueTransformer.m in Sources */,
+				178425692754B5B7006246D0 /* CJMDismissButton.m in Sources */,
+				178426102754BA9B006246D0 /* CJMProfileBuilder.m in Sources */,
+				1784262E2754BA9B006246D0 /* CJMValidationResult.m in Sources */,
+				1784263A2754BA9B006246D0 /* CJMEventDetail.m in Sources */,
+				178424EC27549068006246D0 /* CJMInboxIconMessageCell.m in Sources */,
+				1784249C275482BE006246D0 /* CJMABTestUtils.m in Sources */,
+				1784263E2754BA9B006246D0 /* CJMUtils.m in Sources */,
+				178425702754B5B7006246D0 /* CJMInterstitialImageViewController.m in Sources */,
+				1784262C2754BA9B006246D0 /* CJMValidator.m in Sources */,
+				17842483275482BE006246D0 /* CJMObjectSerializerConfig.m in Sources */,
+				178423E6275478FA006246D0 /* CJMManager.m in Sources */,
+				17842468275482BE006246D0 /* CJMABTestEditorSnapshotMessageResponse.m in Sources */,
+				17842489275482BE006246D0 /* CJMNSStringFromUIColorValueTransformer.m in Sources */,
+				1784247D275482BE006246D0 /* CJMObjectIdentityProvider.m in Sources */,
+				178425A72754B5B7006246D0 /* CJMImageInAppViewController.m in Sources */,
+				17842474275482BE006246D0 /* CJMObjectSequenceGenerator.m in Sources */,
+				17842461275482BE006246D0 /* CJMABTestEditorVarsMessageResponse.m in Sources */,
+				17842472275482BE006246D0 /* CJMObjectSelector.m in Sources */,
+				17842493275482BE006246D0 /* CJMNSDictionaryFromUIEdgeInsetsValueTransformer.m in Sources */,
+				178425A62754B5B7006246D0 /* CJMAlertViewController.m in Sources */,
+				178423DE275478F1006246D0 /* CJMNSData+Base64.m in Sources */,
+				178423FD27547A19006246D0 /* CJMFeatureFlagsController.m in Sources */,
+				1784251127549068006246D0 /* UIView+CJMToast.m in Sources */,
+				178426022754BA9B006246D0 /* CJMUriHelper.m in Sources */,
+				17842482275482BE006246D0 /* CJMEnumDescription.m in Sources */,
+				1784260E2754BA9B006246D0 /* CJMPreferences.m in Sources */,
+				178426052754BA9B006246D0 /* CJMNotificationButton.m in Sources */,
+				17842496275482BE006246D0 /* CJMNSDictionaryFromCGPointValueTransformer.m in Sources */,
+				178425782754B5B7006246D0 /* CJMHalfInterstitialImageViewController.m in Sources */,
+				178424FF27549068006246D0 /* CJMUserMO+CoreDataProperties.m in Sources */,
+				178423EF2754790B006246D0 /* CJMProductConfig.m in Sources */,
+				178426012754BA9B006246D0 /* CJMCertificatePinning.m in Sources */,
+				17842479275482BE006246D0 /* CJMObjectSerializerContext.m in Sources */,
+				178426182754BA9B006246D0 /* CJMDeviceInfo.m in Sources */,
+				17842491275482BE006246D0 /* CJMNSDictionaryFromCATransform3DValueTransformer.m in Sources */,
+				17842460275482BE006246D0 /* CJMABTestEditorDeviceInfoMessageRequest.m in Sources */,
+				1784263B2754BA9B006246D0 /* CJMInstanceConfig.m in Sources */,
+				17842480275482BE006246D0 /* CJMClassDescription.m in Sources */,
+				178426032754BA9B006246D0 /* CJMEventBuilder.m in Sources */,
+				1784256D2754B5B7006246D0 /* CJMHalfInterstitialViewController.m in Sources */,
+				178426362754BA9B006246D0 /* CJMInAppFCManager.m in Sources */,
+				178426002754BA9B006246D0 /* CJMJSInterface.m in Sources */,
+				178425912754B5B7006246D0 /* CJMInterstitialViewController.m in Sources */,
+				178425732754B5B7006246D0 /* CJMBaseHeaderFooterViewController.m in Sources */,
+				1784248D275482BE006246D0 /* CJMPassThroughValueTransformer.m in Sources */,
+				1784262D2754BA9B006246D0 /* CJMPlistInfo.m in Sources */,
+				17842487275482BE006246D0 /* CJMObjectSerializer.m in Sources */,
+				1784250927549068006246D0 /* Inbox.xcdatamodeld in Sources */,
+				178426382754BA9B006246D0 /* CJMSwizzle.m in Sources */,
+				1784260A2754BA9B006246D0 /* CJMPinnedNSURLSessionDelegate.m in Sources */,
+				178424A1275482BE006246D0 /* CJMABVariant.m in Sources */,
+				1784250727549068006246D0 /* CJMInboxMessage.m in Sources */,
+				17842495275482BE006246D0 /* CJMNSDictionaryFromCGRectValueTransformer.m in Sources */,
+				17842488275482BE006246D0 /* CJMNSDictionaryFromUIFontValueTransformer.m in Sources */,
+				1784256A2754B5B7006246D0 /* CJMHeaderViewController.m in Sources */,
+				178423DF275478F1006246D0 /* CJMNSString+Base64.m in Sources */,
+				178426172754BA9B006246D0 /* CJMInAppResources.m in Sources */,
+				1784258B2754B5B7006246D0 /* CJMCoverImageViewController.m in Sources */,
+				178425FF2754BA9B006246D0 /* CJMLocationManager.m in Sources */,
+				17842497275482BE006246D0 /* CJMEditorSession.m in Sources */,
+				1784246B275482BE006246D0 /* CJMABTestEditorVarsMessageRequest.m in Sources */,
+				1784251427549068006246D0 /* CJMSwipeView.m in Sources */,
+				178423F02754790B006246D0 /* CJMConfigValue.m in Sources */,
+				178425952754B5B7006246D0 /* CJMInAppHTMLViewController.m in Sources */,
+				1784248C275482BE006246D0 /* CJMNSDictionaryFromCGSizeValueTransformer.m in Sources */,
+				1784259E2754B5B7006246D0 /* CJMFooterViewController.m in Sources */,
+				1784240627548138006246D0 /* CJMDisplayUnit.m in Sources */,
+				178426142754BA9B006246D0 /* CJMInAppNotification.m in Sources */,
+				178423FC27547A19006246D0 /* CJMFeatureFlags.m in Sources */,
+				178424EA27549068006246D0 /* CJMInboxSimpleMessageCell.m in Sources */,
+				1784251227549068006246D0 /* CJMCarouselImageView.m in Sources */,
+				178426122754BA9B006246D0 /* CJMLocalDataStore.m in Sources */,
+				17842465275482BE006246D0 /* CJMABTestEditorMessage.m in Sources */,
+				178424F527549068006246D0 /* CJMInboxStyleConfig.m in Sources */,
+				17842498275482BE006246D0 /* CJMSwizzler.m in Sources */,
+				1784261F2754BA9B006246D0 /* CJM.m in Sources */,
+				1784250827549068006246D0 /* CJMMessageMO.m in Sources */,
+				1784250A27549068006246D0 /* CJMUserMO.m in Sources */,
+				1784260D2754BA9B006246D0 /* CJMLogger.m in Sources */,
+				17842490275482BE006246D0 /* CJMCGFloatFromNSNumberValueTransformer.m in Sources */,
+				178426192754BA9B006246D0 /* CJMInAppUtils.m in Sources */,
+				1784250D27549068006246D0 /* CJMInboxViewController.m in Sources */,
+				178424EB27549068006246D0 /* CJMInboxBaseMessageCell.m in Sources */,
+				178424A4275482BE006246D0 /* CJMABTestController.m in Sources */,
+				178425FC2754BA9B006246D0 /* CJMKnownProfileFields.m in Sources */,
+				17842470275482BE006246D0 /* NSInvocation+CJMHelper.m in Sources */,
+				17842485275482BE006246D0 /* CJMApplicationStateSerializer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		178423CA27547873006246D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		178423CB27547873006246D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		178423CD27547873006246D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 62XLCJ22EV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendors",
+				);
+				INFOPLIST_FILE = CJMVNPT/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vnptmedia.CJMVNPT;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		178423CE27547873006246D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 62XLCJ22EV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendors",
+				);
+				INFOPLIST_FILE = CJMVNPT/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vnptmedia.CJMVNPT;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		178423B227547873006246D0 /* Build configuration list for PBXProject "CJMVNPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178423CA27547873006246D0 /* Debug */,
+				178423CB27547873006246D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178423CC27547873006246D0 /* Build configuration list for PBXNativeTarget "CJMVNPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178423CD27547873006246D0 /* Debug */,
+				178423CE27547873006246D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		178424D027549068006246D0 /* Inbox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				178424D127549068006246D0 /* Inbox.xcdatamodel */,
+			);
+			currentVersion = 178424D127549068006246D0 /* Inbox.xcdatamodel */;
+			path = Inbox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 178423AF27547873006246D0 /* Project object */;
+}
