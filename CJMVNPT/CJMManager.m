@@ -14,7 +14,7 @@
 
 static const void *const kQueueCJMKey = &kQueueCJMKey;
 
-NSString *const CJM_Version = @"1.0.6_20211109";
+NSString *const CJM_Version = @"2.0.1_20211201";
 
 NSString *const kCJM_AES_KEY = @"dqeqgig123ndb123dsfsdf23g4d56jfq";
 NSString *const kQUEUE_NAME_CJM_EVENTS = @"cjm-events";
