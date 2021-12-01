@@ -5,7 +5,7 @@
 - (void)featureFlagsDidUpdate;
 @end
 
-@class CleverTapInstanceConfig;
+@class CJMInstanceConfig;
 
 @interface CJMFeatureFlagsController : NSObject
 
@@ -14,7 +14,7 @@
 - (instancetype _Nullable ) init __unavailable;
 
 // blocking, call off main thread
-- (instancetype _Nullable)initWithConfig:(CleverTapInstanceConfig *_Nonnull)config
+- (instancetype _Nullable)initWithConfig:(CJMInstanceConfig *_Nonnull)config
                                     guid:(NSString *_Nonnull)guid
                                 delegate:(id<CJMFeatureFlagsDelegate>_Nonnull)delegate;
 

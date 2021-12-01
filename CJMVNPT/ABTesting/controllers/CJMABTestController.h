@@ -9,13 +9,13 @@
 
 @end
 
-@class CleverTapInstanceConfig;
+@class CJMInstanceConfig;
 
 @interface CJMABTestController : NSObject
 
 @property (nonatomic, weak) id<CJMABTestingDelegate> _Nullable delegate;
 
-- (instancetype _Nullable)initWithConfig:(CleverTapInstanceConfig *_Nonnull)config
+- (instancetype _Nullable)initWithConfig:(CJMInstanceConfig *_Nonnull)config
                                     guid:(NSString *_Nonnull)guid
                                 delegate:(id<CJMABTestingDelegate>_Nonnull)delegate;
 - (void)updateExperiments:(NSArray<NSDictionary*> *_Nonnull)experiments;

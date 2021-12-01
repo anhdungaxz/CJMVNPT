@@ -607,9 +607,6 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
     return instance;
 }
 
-- (void)intergrateFirebaseAnalytics: (FIRAnalytics * _Nonnull) analytics {
-    _firAnalytics = analytics;
-}
 
 - (instancetype)initWithConfig:(CJMInstanceConfig*)config andCJMID:(NSString *)CJMID {
     self = [super init];
@@ -3594,8 +3591,12 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 //        }
 //    }];
     
-    [FIRAnalytics logEventWithName:event
-                        parameters: nil];
+    #if __has_include(<Firebase/Firebase.h>)
+        [FIRAnalytics logEventWithName:event
+                            parameters: nil];
+    #endif
+
+    
     
     [self runSerialAsync:^{
         [CJMEventBuilder build:event completionHandler:^(NSDictionary *event, NSArray<CJMValidationResult*>*errors) {
@@ -3620,8 +3621,11 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 //        }
 //    }];
     
-    [FIRAnalytics logEventWithName:event
-                        parameters: properties];
+    #if __has_include(<Firebase/Firebase.h>)
+        [FIRAnalytics logEventWithName:event
+                            parameters: properties];
+    #endif
+    
     [self runSerialAsync:^{
         [CJMEventBuilder build:event withEventActions:properties completionHandler:^(NSDictionary *event, NSArray<CJMValidationResult*>*errors) {
             if (event) {
