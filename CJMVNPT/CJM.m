@@ -3591,10 +3591,9 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 //        }
 //    }];
     
-    #if __has_include(<Firebase/Firebase.h>)
-        [FIRAnalytics logEventWithName:event
+    [FIRAnalytics logEventWithName:event
                             parameters: nil];
-    #endif
+
 
     
     
@@ -3621,10 +3620,8 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 //        }
 //    }];
     
-    #if __has_include(<Firebase/Firebase.h>)
         [FIRAnalytics logEventWithName:event
                             parameters: properties];
-    #endif
     
     [self runSerialAsync:^{
         [CJMEventBuilder build:event withEventActions:properties completionHandler:^(NSDictionary *event, NSArray<CJMValidationResult*>*errors) {
