@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc              = true
   spec.module_name               = 'CJMVNPT'
   spec.resources                 = 'CJMVNPT/*.crt'
+  spec.static_framework = true
   spec.ios.dependency             'SDWebImage', '~> 5.1'
   spec.ios.dependency            'Firebase/Analytics'
   spec.ios.resources             = 'CJMVNPT/**/*.{png,xib}', 'CJMVNPT/**/*.xcdatamodeld'
