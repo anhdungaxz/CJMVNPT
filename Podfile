@@ -6,7 +6,6 @@ target 'CJMVNPT' do
   use_frameworks!
 
   # Pods for CJMVNPT
-
-pod 'CJMVNPT', :path => "../"
+pod 'Firebase/Analytics'
 
 end

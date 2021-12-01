@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+@import Firebase;
 
 #if defined(CJM_HOST_WATCHOS)
 #import <WatchConnectivity/WatchConnectivity.h>
@@ -150,6 +151,19 @@ typedef NS_ENUM(int, CJMLogLevel) {
  
  */
 + (instancetype _Nonnull)instanceWithConfig:(CJMInstanceConfig * _Nonnull)config andCJMID:(NSString * _Nonnull)CJMID;
+
+
+/*!
+ @method
+ 
+ @abstract
+ Set the Firebase analytics
+ 
+ @discussion
+ Set the Firebase analytics
+ 
+ */
+- (void)intergrateFirebaseAnalytics: (FIRAnalytics * _Nonnull) analytics;
 
 /*!
  @method

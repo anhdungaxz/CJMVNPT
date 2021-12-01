@@ -308,6 +308,7 @@
 		178426452754DC25006246D0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178426442754DC24006246D0 /* SDWebImage.framework */; };
 		1784269427560A0B006246D0 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1784269327560A0B006246D0 /* libicucore.tbd */; };
 		1784269627560A14006246D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1784269527560A14006246D0 /* libsqlite3.tbd */; };
+		59186D143A90F01EB7F7C376 /* Pods_CJMVNPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B0AE7FE211DB5A9003A213 /* Pods_CJMVNPT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -613,6 +614,9 @@
 		178426442754DC24006246D0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Vendors/SDWebImage.framework; sourceTree = "<group>"; };
 		1784269327560A0B006246D0 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
 		1784269527560A14006246D0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		19B0AE7FE211DB5A9003A213 /* Pods_CJMVNPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJMVNPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB251406407E301A3433D1A /* Pods-CJMVNPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMVNPT.release.xcconfig"; path = "Target Support Files/Pods-CJMVNPT/Pods-CJMVNPT.release.xcconfig"; sourceTree = "<group>"; };
+		6F76FE14A690492BBF32730B /* Pods-CJMVNPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMVNPT.debug.xcconfig"; path = "Target Support Files/Pods-CJMVNPT/Pods-CJMVNPT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -623,6 +627,7 @@
 				1784269627560A14006246D0 /* libsqlite3.tbd in Frameworks */,
 				1784269427560A0B006246D0 /* libicucore.tbd in Frameworks */,
 				178426452754DC25006246D0 /* SDWebImage.framework in Frameworks */,
+				59186D143A90F01EB7F7C376 /* Pods_CJMVNPT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +640,7 @@
 				178423BA27547873006246D0 /* CJMVNPT */,
 				178423B927547873006246D0 /* Products */,
 				178426432754DC24006246D0 /* Frameworks */,
+				481B51F1969C84B85919270D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1181,8 +1187,19 @@
 				1784269527560A14006246D0 /* libsqlite3.tbd */,
 				1784269327560A0B006246D0 /* libicucore.tbd */,
 				178426442754DC24006246D0 /* SDWebImage.framework */,
+				19B0AE7FE211DB5A9003A213 /* Pods_CJMVNPT.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		481B51F1969C84B85919270D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F76FE14A690492BBF32730B /* Pods-CJMVNPT.debug.xcconfig */,
+				5FB251406407E301A3433D1A /* Pods-CJMVNPT.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1316,6 +1333,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 178423CC27547873006246D0 /* Build configuration list for PBXNativeTarget "CJMVNPT" */;
 			buildPhases = (
+				84F77AC557C19C36A4EDFEB8 /* [CP] Check Pods Manifest.lock */,
 				178423B327547873006246D0 /* Headers */,
 				178423B427547873006246D0 /* Sources */,
 				178423B527547873006246D0 /* Frameworks */,
@@ -1435,6 +1453,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F77AC557C19C36A4EDFEB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CJMVNPT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		178423B427547873006246D0 /* Sources */ = {
@@ -1691,6 +1734,7 @@
 		};
 		178423CD27547873006246D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F76FE14A690492BBF32730B /* Pods-CJMVNPT.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -1725,6 +1769,7 @@
 		};
 		178423CE27547873006246D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB251406407E301A3433D1A /* Pods-CJMVNPT.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;

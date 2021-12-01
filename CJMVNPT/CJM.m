@@ -606,6 +606,10 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
     return instance;
 }
 
+- (void)intergrateFirebaseAnalytics: (FIRAnalytics * _Nonnull) analytics {
+    
+}
+
 - (instancetype)initWithConfig:(CJMInstanceConfig*)config andCJMID:(NSString *)CJMID {
     self = [super init];
     if (self) {
