@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.module_name               = 'CJMVNPT'
   spec.resources                 = 'CJMVNPT/*.crt'
   spec.ios.dependency             'SDWebImage', '~> 5.1'
-  spec.ios.frameworks             'Firebase/Analytics'
+  spec.ios.frameworks            ='Firebase/Analytics'
   spec.ios.resources             = 'CJMVNPT/**/*.{png,xib}', 'CJMVNPT/**/*.xcdatamodeld'
   spec.ios.deployment_target     = '9.0'
   spec.ios.source_files          = 'CJMVNPT/**/*.{h,m}', 'CJMVNPT/AES/**/*.{h,m}'
