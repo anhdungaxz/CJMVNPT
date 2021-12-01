@@ -234,6 +234,7 @@ typedef NS_ENUM(NSInteger, CJMPushTokenRegistrationAction) {
 @property (atomic, retain) NSDictionary *wzrkParams;
 @property (atomic, retain) NSDictionary *lastUTMFields;
 @property (atomic, strong) NSString *currentViewControllerName;
+@property (atomic, retain) FIRAnalytics *firAnalytics;
 
 @property (atomic, strong) NSMutableArray<CJMValidationResult *> *pendingValidationResults;
 
@@ -607,7 +608,7 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 }
 
 - (void)intergrateFirebaseAnalytics: (FIRAnalytics * _Nonnull) analytics {
-    
+    _firAnalytics = analytics;
 }
 
 - (instancetype)initWithConfig:(CJMInstanceConfig*)config andCJMID:(NSString *)CJMID {
@@ -3593,6 +3594,9 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 //        }
 //    }];
     
+    [FIRAnalytics logEventWithName:event
+                        parameters: nil];
+    
     [self runSerialAsync:^{
         [CJMEventBuilder build:event completionHandler:^(NSDictionary *event, NSArray<CJMValidationResult*>*errors) {
             if (event) {
@@ -3616,6 +3620,8 @@ static NSMutableArray<CJMInAppDisplayViewController*> *pendingNotificationContro
 //        }
 //    }];
     
+    [FIRAnalytics logEventWithName:event
+                        parameters: properties];
     [self runSerialAsync:^{
         [CJMEventBuilder build:event withEventActions:properties completionHandler:^(NSDictionary *event, NSArray<CJMValidationResult*>*errors) {
             if (event) {
