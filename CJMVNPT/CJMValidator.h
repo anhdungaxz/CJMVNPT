@@ -28,6 +28,6 @@ typedef NS_ENUM(int, CJMValidatorContext) {
 
 + (void)setDiscardedEvents:(NSArray *)events;
 
-+ (BOOL)isValidCJMId:(NSString *)cleverTapID;
++ (BOOL)isValidCJMId:(NSString *)cjmID;
 
 @end
