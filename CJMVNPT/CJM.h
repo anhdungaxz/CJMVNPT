@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import <Firebase/Firebase.h>
+//#import <Firebase/Firebase.h>
 
 #if defined(CJM_HOST_WATCHOS)
 #import <WatchConnectivity/WatchConnectivity.h>
