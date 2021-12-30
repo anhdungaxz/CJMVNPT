@@ -2,14 +2,14 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CJMVNPT"
-  spec.version      = "1.0.0"
+  spec.version      = "2.0.2"
   spec.summary      = "CJM - VNPT"
 
   spec.description  = "Customer Journey Map VNPT."
   spec.homepage     = "https://github.com/anhdungaxz/CJMVNPT.git"
   spec.license      = "MIT"
   spec.author             = { "VNPT Media" => "VNPTMedia@gmail.com" }
-  spec.source       = { :git => "https://github.com/anhdungaxz/CJMVNPT.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/anhdungaxz/CJMVNPT.git", :tag => "2.0.2" }
 
   spec.requires_arc              = true
   spec.module_name               = 'CJMVNPT'
